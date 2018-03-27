@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zmsoft.ccd.lib.widget.layout.square.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+     <RelativeLayout
+         android:id="@+id/layout_content_grid_desk"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_margin="@dimen/margin_micro"
+         android:background="@drawable/icon_seat_bg">
+         <RelativeLayout
+             android:id="@+id/layout_desk_empty"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:visibility="visible">
+             <TextView
+                 android:id="@+id/text_desk_desc"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginBottom="@dimen/margin_medium"
+                 android:textColor="@color/accentInverseTextColor"
+                 android:text="@string/order_find_text_desk_desc_example"/>
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/layout_desk_open_order"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:visibility="gone">
+
+             <ImageView
+                 android:id="@+id/image_customer_number"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_marginLeft="@dimen/margin_small"
+                 android:layout_marginStart="@dimen/margin_small"
+                 android:src="@drawable/icon_order_find_desk_customer_number"
+                 android:contentDescription="@string/order_find_image_customer_number_description" />
+
+             <TextView
+                 android:id="@+id/text_customer_number"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_marginRight="@dimen/margin_small"
+                 android:layout_marginEnd="@dimen/margin_small"
+                 android:textColor="@color/order_find_retail_customer_number_text_color"
+                 android:textSize="@dimen/text_size_normal"
+                 android:text="@string/order_find_text_customer_number"
+                 tools:ignore="RelativeOverlap" />
+         </RelativeLayout>
+
+
+         <RelativeLayout
+             android:id="@+id/layout_desk_paid"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:visibility="gone">
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                 android:src="@drawable/icon_order_find_pay_all"
+                 android:contentDescription="@string/order_find_image_pay_all_description" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginBottom="13dp"
+                 android:textSize="@dimen/text_size_medium"
+                 android:textColor="@color/order_find_pay_all_text_color"
+                 android:text="@string/pay_all"/>
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/layout_desk_eat_time"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:visibility="gone">
+             <ImageView
+                 android:id="@+id/image_desk_eat_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_marginLeft="@dimen/margin_small"
+                 android:layout_marginStart="@dimen/margin_small"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginBottom="12dp"
+                 android:src="@drawable/icon_order_find_eat_time_normal"
+                 android:contentDescription="@string/order_find_image_desk_eat_time_description" />
+             <TextView
+                 android:id="@+id/text_eat_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_marginRight="@dimen/margin_small"
+                 android:layout_marginEnd="@dimen/margin_small"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginBottom="12dp"
+                 android:text="@string/order_find_text_eat_time_example"
+                 tools:ignore="RelativeOverlap" />
+         </RelativeLayout>
+
+         <TextView
+             android:id="@+id/text_desk_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="@dimen/margin_small"
+             android:gravity="center"
+             android:maxEms="5"
+             android:maxLines="1"
+             android:textColor="@color/accentInverseTextColor"
+             android:textSize="@dimen/text_size_medium"
+             android:text="@string/order_find_text_desk_name_example"/>
+     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_order_find_print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/icon_order_find_print"
+        android:contentDescription="@string/order_find_image_order_find_print_description" />
+
+
+
+</com.zmsoft.ccd.lib.widget.layout.square.SquareRelativeLayout>

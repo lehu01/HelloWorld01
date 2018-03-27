@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f5"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_remark_divider"
+        style="@style/DividerStyle" />
+
+    <EditText
+        android:id="@+id/edit_memo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:hint="@string/module_menu_cartdetail_remark_hint"
+        android:maxLength="64"
+        android:padding="@dimen/padding_small"
+        android:textColor="@color/secondaryTextColor"
+        android:textColorHint="@color/secondaryTextColor"
+        android:textSize="@dimen/text_size_normal"
+        android:textCursorDrawable="@drawable/edit_cursor_color"/>
+
+    <View
+        android:id="@+id/view_standby_divider"
+        style="@style/DividerStyle" />
+
+    <LinearLayout
+        android:id="@+id/layout_standby"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small">
+
+        <TextView
+            android:id="@+id/text_standby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/module_menu_cartdetail_standby"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/checkbox_standby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_presenter_divider"
+        style="@style/DividerStyle" />
+
+    <LinearLayout
+        android:id="@+id/layout_presenter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small">
+
+        <TextView
+            android:id="@+id/text_presenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/module_menu_cartdetail_presenter"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/checkbox_presenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_bottom_divider"
+        style="@style/DividerStyle"
+        android:layout_marginBottom="50dp" />
+</LinearLayout>

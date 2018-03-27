@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="100dp" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_refresh_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image_refresh_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cart_refresh_notice"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/layout_refresh"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/margin_micro"
+            android:layout_toEndOf="@id/image_refresh_notice"
+            android:layout_toRightOf="@id/image_refresh_notice"
+            android:background="@drawable/shape_circle_black_alert"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image_unread"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="end|top"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/shape_circle_red_alert"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/module_menuImageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_cart_refresh" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/layout_go_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/text_go_on"
+                style="@style/BottomTextRedCircleStyle"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/ic_go_on"
+                android:text="@string/module_menu_retail_cart_go_on" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_hang_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/text_hang_up"
+                style="@style/BottomTextRedCircleStyle"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_circle_black_button"
+                android:drawableTop="@drawable/ic_cart_hang_up"
+                android:text="@string/module_menu_cart_hang_up" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_sure_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/text_sure_order"
+                style="@style/BottomTextRedCircleStyle"
+                android:layout_gravity="center_horizontal"
+                android:drawableTop="@drawable/ic_end_pay"
+                android:text="@string/module_menu_retail_check_out" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

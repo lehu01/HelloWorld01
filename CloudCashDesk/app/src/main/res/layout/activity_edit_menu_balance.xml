@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_edit_menu_balance"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zmsoft.ccd.module.menubalance.EditMenuBalanceActivity">
+
+    <RelativeLayout
+        android:id="@+id/sold_out_instance_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/instance_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sold_out_item_height"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/edit_sold_out_item_padding_left_right"
+            android:paddingRight="@dimen/edit_sold_out_item_padding_left_right"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sold_out_instance_name"
+                android:textColor="@color/common_front_black"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/sold_out_instance_name"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/common_front_gery"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sold_out_no_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sold_out_item_height"
+            android:layout_below="@id/instance_name_container"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/edit_sold_out_item_padding_left_right"
+            android:paddingRight="@dimen/edit_sold_out_item_padding_left_right"
+            android:visibility="invisible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/default_divide" />
+
+            <TextView
+                android:id="@+id/reserve_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sold_out_instance_no"
+                android:textColor="@color/common_front_black"
+                android:textSize="@dimen/text_size_normal" />
+
+            <EditText
+                android:id="@+id/input_instance_last_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/reserve_status"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/mast_fill"
+                android:inputType="numberDecimal"
+                android:textColor="@color/common_front_black"
+                android:textColorHint="@color/common_button_red"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sold_out_item_height"
+            android:layout_below="@id/instance_name_container"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/edit_sold_out_item_padding_left_right"
+            android:paddingRight="@dimen/edit_sold_out_item_padding_left_right">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/default_divide" />
+
+            <TextView
+                android:id="@+id/text_sold_out_instance_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:drawableEnd="@drawable/down_icon"
+                android:drawablePadding="@dimen/padding_micro"
+                android:drawableRight="@drawable/down_icon"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingEnd="0dp"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="0dp"
+                android:paddingStart="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_small"
+                android:text=""
+                android:textColor="@color/common_blue"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/text_sold_out_instance_status"
+                android:layout_toStartOf="@id/text_sold_out_instance_status"
+                android:gravity="start"
+                android:text="@string/sold_out_instance_status"
+                android:textColor="@color/common_front_black"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_cancel_sold_out"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cancel_sold_out_btn_height"
+        android:layout_below="@id/sold_out_instance_info_container"
+        android:layout_marginLeft="@dimen/cancel_sold_out_btn_margin_left_right"
+        android:layout_marginRight="@dimen/cancel_sold_out_btn_margin_left_right"
+        android:layout_marginTop="@dimen/cancel_sold_out_btn_margin_top"
+        android:background="@drawable/common_red_button_style"
+        android:text="@string/cancel_sold_out"
+        android:textColor="@color/white" />
+</RelativeLayout>

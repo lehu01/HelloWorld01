@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f5"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_small">
+
+    <View
+        android:id="@+id/view_dash_divider"
+        style="@style/DashDividerStyle" />
+
+    <com.zmsoft.ccd.lib.widget.FoodNumberTextView
+        android:id="@+id/edit_food_number_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view_divider"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:module_menu_left_image="@drawable/module_menu_food_number_minus"
+        app:module_menu_middle_max_value="10000"
+        app:module_menu_middle_min_value="0"
+        app:module_menu_middle_text_color="@color/primaryTextColor"
+        app:module_menu_middle_text_size="@dimen/text_size_small"
+        app:module_menu_right_image="@drawable/module_menu_food_number_plus" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_dash_divider"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="start"
+        android:layout_toLeftOf="@id/edit_food_number_view"
+        android:layout_toStartOf="@id/edit_food_number_view"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/text_size_normal"
+        tools:text="子菜子菜子菜子菜" />
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_name"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/text_soldout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view_divider"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:text="@string/module_menu_cartdetail_soldout"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="@dimen/text_size_normal"
+        android:visibility="visible" />
+
+</RelativeLayout>

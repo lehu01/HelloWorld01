@@ -1,0 +1,95 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION as int
+    buildToolsVersion BUILD_TOOLS_VERSION as String
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION as int
+        targetSdkVersion TARGET_SDK_VERSION as int
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [eventBusIndex: 'com.zmsoft.ccd.MyEventBusIndex', moduleName: project.getName()]
+            }
+        }
+        buildConfigField "String", "AESEncryptKey",  "\"$AES_EncryptKEY\""
+    }
+    publishNonDefault true
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:support-v4:$SUPPORT_LIB_VERSION"
+    testCompile 'junit:junit:4.12'
+    compile project(':lib.utils')
+    compile project(':lib.bean')
+    compile project(':lib.res')
+    //Parse Json
+    compile 'com.google.code.gson:gson:2.8.0'
+
+    //View Injection:
+    compile "com.jakewharton:butterknife:$BUTTER_KNIFE_VERSION"
+    //路由
+    compile "com.chiclaim:router:${MROUTER_VERSION}"
+
+    //RxJava
+    compile "io.reactivex:rxandroid:$RXANDROID_API_VERSION"
+    compile "io.reactivex:rxjava:$RXJAVA_API_VERSION"
+    compile "com.jakewharton.rxbinding:rxbinding:$RXBINDING_API_VERSION"
+
+    //dagger2
+    compile "com.google.dagger:dagger:$DAGGER_COMPILER_VERSION"
+
+    //事件总线
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    //2dire network
+    compile "com.dfire.mobile.network:network-core:$NETWORK_CORE_VERSION"
+    compile "com.dfire.mobile.network:network-service:$NETWORK_SERVICE_VERSION"
+    compile "com.dfire.mobile.util:gson-mapper:$GSON_MAPPER_VERSION"//(optional)
+    compile 'com.dfire.mobile.network:gsonconverter:1.0.0'//(optional)
+    compile 'com.dfire.mobile.network:network-httpdns:1.1.0'
+
+    // 二维码相关
+    compile 'com.zmsoft.component.codescanner:codescanner:0.5.4'
+
+    compile 'com.dfire.mobile.config:security-config:1.0.5'
+
+    compile 'com.dfire.mobile.peripheral:code-reader:latest.release'
+
+    //数据统计
+    compile('com.crashlytics.sdk.android:answers:1.3.13@aar') {
+        transitive = true
+    }
+    compile('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
+        transitive = true
+    }
+    compile 'com.meituan.android.walle:library:1.1.5'
+
+    // android libraries
+    compile "com.android.support:appcompat-v7:$SUPPORT_LIB_VERSION"
+    compile "com.android.support:support-v13:$SUPPORT_LIB_VERSION"
+    compile "com.android.support:recyclerview-v7:$SUPPORT_LIB_VERSION"
+    compile "com.android.support:design:$SUPPORT_LIB_VERSION"
+
+    annotationProcessor "org.greenrobot:eventbus-annotation-processor:$EVENTBUS_ANNOTATION_PROCESSOR_VERSION"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTER_KNIFE_VERSION"
+    annotationProcessor "com.google.dagger:dagger-compiler:$DAGGER_COMPILER_VERSION"
+    annotationProcessor "com.chiclaim:router-compiler:${MROUTER_COMPILER_VERSION}"
+}

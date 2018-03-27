@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="cancel">Cancel</string>
+    <string name="dialog_permission_button">Next</string>
+    <string name="dialog_permission_content">In order to use 2Dfire POS normally, you need the following permission</string>
+    <string name="dialog_permission_title">Start 2Dfire POS</string>
+    <string name="filter_condition">Filter Condition</string>
+    <string name="listview_header_hint_normal">Pull down to refresh</string>
+    <string name="listview_header_hint_release">Release immediately refresh</string>
+    <string name="listview_header_last_time">Last updated time：</string>
+    <string name="listview_loading">Loading...</string>
+    <string name="loading_done">Load done</string>
+    <string name="nomore_loading">No more</string>
+    <string name="ok">Confirmation</string>
+    <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+    <string name="refresh_done">Refresh complete</string>
+    <string name="refreshing">Refreshing ...</string>
+    <string name="right_filter_finish">Complete</string>
+    <string name="right_filter_reset">Reset</string>
+    <string name="right_filter_title_example">Cashier</string>
+    <string name="softkeyboard_confirm">Confirm</string>
+    <string name="softkeyboard_delete">Delete</string>
+    <string name="title_camera_permission_dialog">Request camera permission</string>
+    <string name="title_settings_dialog">Permissions Required</string>
+    <string name="pickerview_cancel">Cancel</string>
+    <string name="pickerview_submit">Confirm</string>
+
+    <string name="InflateEmpty">show empty</string>
+    <string name="InflateLoading">show loading</string>
+    <string name="InflateRetry">show retry</string>
+    <string name="ShowContent">show content</string>
+    <string name="loading">loading</string>
+    <string name="pickerview_day">day</string>
+    <string name="pickerview_hours">hour</string>
+    <string name="pickerview_minutes">minute</string>
+    <string name="pickerview_month">month</string>
+    <string name="pickerview_seconds">second</string>
+    <string name="pickerview_year">year</string>
+    <string name="text_empty">No data!</string>
+    <string name="text_retry">Something went wrong!\n\nTap to retry</string>
+    <string name="title_location_permission_dialog">Request location permission</string>
+</resources>

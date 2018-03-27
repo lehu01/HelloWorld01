@@ -1,0 +1,10 @@
+<manifest package="com.zmsoft.ccd.lib.utils"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 自定义GlideModule -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application>
+        <meta-data
+            android:name="com.zmsoft.ccd.lib.utils.imageloadutil.MyGlideModule"
+            android:value="GlideModule" />
+    </application>
+</manifest>

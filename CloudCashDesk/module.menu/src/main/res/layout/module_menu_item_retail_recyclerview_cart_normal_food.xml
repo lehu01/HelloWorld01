@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_jag_up"
+        layout="@layout/item_divider_jag" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/module_menu_item_bg_color"
+        android:paddingBottom="@dimen/module_menu_list_margin">
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_divide" />
+
+        <RelativeLayout
+            android:id="@+id/frame_image_menu_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/module_menu_list_margin"
+            android:layout_marginRight="@dimen/module_menu_list_margin"
+            android:layout_marginTop="@dimen/module_menu_list_margin">
+
+            <ImageView
+                android:id="@+id/image_menu_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/module_menu_ic_default_menu_image"
+                tools:background="#50000000"
+                tools:src="@drawable/module_menu_ic_default_menu_image" />
+
+            <View
+                android:id="@+id/view_shade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.6"
+                android:background="#000000"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/image_menu_icon_sell_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:src="@drawable/module_menu_ic_sell_out"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/frame_image_menu_icon"
+            android:layout_toRightOf="@id/frame_image_menu_icon"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_weigh_food_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/module_res_shape_retail_weigh"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/module_res_label_retail_weigh"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                tools:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/module_menu_list_margin"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:drawableRight="@drawable/module_menu_ic_modify"
+                android:drawablePadding="10dp"
+                android:drawableEnd="@drawable/module_menu_ic_modify"
+                android:singleLine="true"
+                android:textColor="@color/module_menu_black"
+                android:textSize="14sp"
+                tools:text="青椒肉" />
+
+            <com.zmsoft.ccd.lib.widget.ShopSpecialityView
+                android:id="@+id/shop_speciality_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/module_menu_list_margin"
+                app:module_menu_shop_speciality_chili_image="@drawable/module_menu_chili_rate"
+                app:module_menu_shop_speciality_recommendation_image="@drawable/module_menu_recommend_rate"
+                app:module_menu_shop_speciality_text_color="@color/module_menu_price_red"
+                app:module_menu_shop_speciality_text_size="10sp"
+                tools:module_menu_shop_speciality_chili_rate="2"
+                tools:module_menu_shop_speciality_recommendation_rate="2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_bar_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_menu_name"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/frame_image_menu_icon"
+            tools:text="10000003782324243"
+            android:textColor="#FF7D7D7D"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/text_food_unit_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/frame_image_menu_icon"
+            android:layout_toRightOf="@id/frame_image_menu_icon"
+            android:textSize="14sp"
+            tools:text="¥8.00/份"
+            tools:textColor="@color/module_menu_price_red" />
+
+        <com.zmsoft.ccd.lib.widget.FoodNumberTextView
+            android:id="@+id/edit_food_number_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/frame_image_menu_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/module_menu_list_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:module_menu_left_image="@drawable/module_menu_food_number_minus"
+            app:module_menu_middle_max_value="10000"
+            app:module_menu_middle_min_value="0"
+            app:module_menu_middle_text_color="@color/module_menu_black"
+            app:module_menu_middle_text_size="14sp"
+            app:module_menu_right_image="@drawable/module_menu_food_number_plus"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_food_weight"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/frame_image_menu_icon"
+            android:background="@drawable/module_menu_shape_rect_gray_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/module_menu_list_margin"
+            android:visibility="gone">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <com.zmsoft.ccd.lib.widget.EditFoodNumberView
+                    android:id="@+id/edit_food_weight_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:module_menu_middle_max_value="10000"
+                    app:module_menu_middle_min_value="0"
+                    app:module_menu_middle_text_color="@color/module_menu_black"
+                    app:module_menu_middle_text_size="14sp" />
+                <TextView
+                    android:id="@+id/tv_account_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/edit_food_weight_view"
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:text="kg"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_clear_weigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/frame_image_menu_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/module_menu_list_margin"
+            android:drawableLeft="@drawable/module_menu_ic_retail_clear_weigh"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tools:text="10.57kg" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layout_jag_bottom"
+        layout="@layout/item_divider_bottom_jag" />
+
+</LinearLayout>

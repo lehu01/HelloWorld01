@@ -1,0 +1,192 @@
+<resources>
+    <string name="module_menu_app_name">Module.Menu</string>
+    <string name="module_menu_food_unit">份</string>
+    <string name="module_menu_food_require_tip">必選商品，已加入購物車</string>
+
+
+    <string name="module_menu_food_number">%1$d份</string>
+    <string name="module_menu_number">數量</string>
+    <string name="module_menu_extra_price">+ %1$s</string>
+
+    <!--菜單模塊 START-->
+    <string name="module_menu_title">菜單</string>
+    <string name="module_menu_custom_food_title">自定義商品</string>
+    <string name="module_menu_sweep">掃一掃</string>
+    <string name="module_menu_shop_specialty">本店招牌</string>
+    <string name="module_menu_hint_search_food">請輸入商品名稱或簡拼</string>
+    <string name="module_menu_input_custom_food_note">手動輸入備注</string>
+    <string name="module_menu_custom_food_label_name">品名</string>
+    <string name="module_menu_custom_food_label_category">商品分類</string>
+    <string name="module_menu_custom_food_unit">份</string>
+    <string name="module_menu_custom_food_label_unit">點菜單位</string>
+    <string name="module_menu_custom_food_label_same_unit">結賬單位與點菜單位相同</string>
+    <string name="module_menu_custom_food_label_price">單價</string>
+    <string name="module_menu_custom_food_label_can_discount">允許打折</string>
+    <string name="module_menu_custom_food_label_pass_through">傳菜方案</string>
+    <string name="module_menu_custom_food_label_note">備注</string>
+    <string name="module_menu_text_title_cancel">取消</string>
+    <string name="module_menu_text_title_save">保存</string>
+    <string name="module_menu_custom_food_order_count">點菜數量</string>
+    <string name="module_menu_list_bottom_cart">購物車</string>
+    <string name="module_menu_custom_food">自定義商品</string>
+    <string name="module_menu_category">菜類</string>
+    <string name="module_menu_hint_suit_note">手動輸入備注</string>
+    <string name="module_menu_suit_label_serving_immediately">暫不上菜</string>
+    <string name="module_menu_suit_title">套餐</string>
+    <string name="module_menu_cart_combo_sub">套餐%1$d</string>
+    <string name="module_menu_add_to_cart">加入購物車</string>
+    <string name="module_menu_title_suit_right">介紹/備注</string>
+    <string name="module_menu_filter_letter">字母</string>
+    <string name="module_menu_custom_food_account_count">結賬數量</string>
+    <string name="module_menu_custom_food_account_unit">結賬單位</string>
+    <string name="module_menu_default_account_unit">斤</string>
+    <string name="module_menu_default_order_unit">份</string>
+    <string name="module_menu_scan">掃碼點菜</string>
+    <string name="module_menu_list_feed_foodnum">加%1$s%2$s%3$s</string>
+    <string name="module_menu_select_category">選擇</string>
+    <string name="module_menu_menu_category">商品分類</string>
+    <string name="module_menu_check_input_food_name">品名不能為空</string>
+    <string name="module_menu_check_input_category_name">請選擇商品類別</string>
+    <string name="module_menu_check_input_count">點菜數量不能為空</string>
+    <string name="module_menu_check_input_count_must_than_zero">點菜數量必須大於0</string>
+    <string name="module_menu_check_input_unit">點菜單位不能為空</string>
+    <string name="module_menu_check_input_account_num">結賬數量不能為空</string>
+    <string name="module_menu_check_input_account_num_than_zero">結賬數量必須大於0</string>
+    <string name="module_menu_check_input_account_unit">結賬單位不能為空</string>
+    <string name="module_menu_check_unit_account_unit_cannot_same">你開啓了雙單位，結賬單位與點菜單位不能相同</string>
+    <string name="module_menu_check_input_unit_price">商品單價不能為空</string>
+    <string name="module_menu_check_input_unit_price_must_than_zero">商品單價必須大於0</string>
+    <string name="module_menu_check_input_num">數量必須大於或等於0小於10000</string>
+    <string name="module_menu_check_start_num">%1$s%2$d%3$s起點哦</string>
+    <string name="module_menu_save_custom_food_success">自定義菜添加購物車成功</string>
+    <string name="module_menu_update_custom_food_success">自定義菜修改成功</string>
+    <string name="module_menu_no_permission_custom_food">您沒有\"添加自定義菜\"的權限，無法進行此操作！</string>
+    <string name="module_menu_load_transfer_failed_retry">傳送方案加載失敗，點擊重試!</string>
+    <string name="module_menu_list_placeholder_price_unit">%1$s/%2$s</string>
+    <string name="module_menu_suit">套餐</string>
+    <string name="module_menu_suit_menu_add_price">需加價%1$s</string>
+    <string name="module_menu_modify_cart_failed">點菜失敗，網絡不給力哦</string>
+    <string name="module_menu_load_menu_or_cart_failed">網絡不給力，點擊重試</string>
+    <string name="module_menu_load_failed">網絡不給力哦</string>
+    <string name="module_menu_suit_menu_require_num">已點%1$s份</string>
+    <string name="module_menu_suit_menu_require_num_unit">已點%1$d%2$s</string>
+    <string name="module_menu_suit_menu_name_suffix">(%1$s)</string>
+    <string name="module_menu_list_suit_detail_price">%1$s</string>
+    <string name="module_menu_menu_num_flag">數量</string>
+    <string name="module_menu_suit_detail_add_to_cart">加入購物車</string>
+    <string name="module_menu_suit_detail_group_num">%1$s/%2$s</string>
+    <string name="module_menu_suit_detail_group_num_no_limit">不限制</string>
+    <string name="module_menu_suit_sub_num_limit">\"%1$s\"只能點%2$s份哦</string>
+    <string name="module_menu_suit_group_menu_num_no_select_prefix">還有</string>
+    <string name="module_menu_suit_group_menu_num_no_select">%1$s份%2$s尚未選擇</string>
+    <string name="module_menu_suit_detail_group_num_limit">\"%1$s\"有數量限制，請取消%2$s份再選新的</string>
+    <string name="module_menu_suit_menu_ordered_num">已點%1$s%2$s</string>
+    <string name="module_menu_suit_menu_update_confirm">確定</string>
+    <string name="module_menu_suit_menu_rule_label">套餐內商品組合計價規則:</string>
+    <string name="module_menu_dialog_title_suit_sell_out">提示</string>
+    <string name="module_menu_dialog_content_suit_sell_out">套餐的必點商品已售完，不能再點啦</string>
+    <string name="module_menu_dialog_button_suit_sell_out">我知道了</string>
+    <string name="module_menu_suit_menu_select_none_tip">您還有菜沒有選好哦</string>
+    <string name="module_menu_suit_menu_select_menu_positive">選好了</string>
+    <string name="module_menu_suit_menu_select_menu_negative">繼續點單</string>
+    <string name="module_menu_suit_menu_detail_load_failed">套餐加載失敗，稍後重試</string>
+    <string name="module_menu_list_load_failed">菜單列表加載失敗，稍後重試</string>
+    <string name="module_menu_suit_num_check_zero">套餐數量必須大於0</string>
+    <!--菜單模塊 END-->
+
+    <!--購物車 START-->
+    <string name="module_menu_cart">購物車</string>
+    <string name="module_menu_cart_modify">修改</string>
+    <string name="module_menu_cart_clear">清空</string>
+    <string name="module_menu_cart_must_select_remark">在本店消費，以下商品必選哦</string>
+    <string name="module_menu_cart_summary_label">購物車里有: </string>
+    <string name="module_menu_cart_summary_amount">合計: </string>
+    <string name="module_menu_cart_summart_foodnum">%1$s%2$d個</string>
+    <string name="module_menu_cart_submenu_foodnum">%1$s%2$s%3$s</string>
+    <string name="module_menu_cart_feed_foodnum">+%1$s%2$s%3$s</string>
+    <string name="module_menu_cart_food_standby">(待)</string>
+    <string name="module_menu_food_category">商品分類</string>
+    <string name="module_menu_cart_combo_select_child">請選擇套餐里的商品</string>
+    <string name="module_menu_mustselect_child">請選擇必選商品里的套餐</string>
+    <string name="module_menu_cart_empty">購物車為空，不能下單</string>
+    <string name="module_menu_cart_clear_hint">確定要清空購物車嗎？</string>
+    <string name="module_menu_cart_sure_order">下單</string>
+    <string name="module_menu_cart_go_on">繼續點菜</string>
+    <string name="module_menu_cart_hang_up">掛單</string>
+    <string name="module_menu_confirm">確定</string>
+    <string name="module_menu_join_cart_success">%1$s點菜成功</string>
+    <string name="module_menu_join_cart_fail_offshelves">點菜失敗，該菜已下架</string>
+    <string name="module_menu_join_cart_fail_soldout">點菜失敗，該菜已售完</string>
+    <string name="module_menu_cart_dialog_clearing">正在清空</string>
+    <string name="module_menu_cart_dialog_joining">正在加入購物車</string>
+    <string name="module_menu_cart_not_support_combo_hint">二維火收銀(手機版)暫不支持點套餐，請在二維火收銀機上操作，或讓顧客使用掃碼點菜！</string>
+    <string name="module_menu_cart_dialog_iknow">我知道了</string>
+    <!--購物車 END-->
+
+    <!--購物車 詳情 START-->
+    <string name="module_menu_cartdetail_food_weight">商品重量</string>
+    <string name="module_menu_cartdetail_feed">加料</string>
+    <string name="module_menu_cartdetail_remark">備注</string>
+    <string name="module_menu_cartdetail_remark_hint">手動輸入備注</string>
+    <string name="module_menu_cartdetail_standby">暫不上菜</string>
+    <string name="module_menu_cartdetail_presenter">贈送這個菜</string>
+    <string name="module_menu_cartdetail_spec">規格</string>
+    <string name="module_menu_cartdetail_makename">做法</string>
+    <string name="module_menu_cartdetail_mustselect">(必選)</string>
+    <string name="module_menu_cartdetail_make_addprice_once">+ %1$s</string>
+    <string name="module_menu_cartdetail_make_addprice_per">+ %2$s/%1$s </string>
+    <string name="module_menu_cartdetail_num">數量</string>
+    <string name="module_menu_cartdetail_join_cart">加入購物車</string>
+    <string name="module_menu_cartdetail_join_combo">加入套餐</string>
+    <string name="module_menu_cartdetail_ordered_num">已點%1$s%2$s</string>
+    <string name="module_menu_cartdetail_notdata_error">無法獲取當前的菜餚數據</string>
+    <string name="module_menu_cartdetail_delete_food">確定要刪除此商品嗎？</string>
+    <string name="module_menu_cartdetail_submit_order_positive">確認加菜</string>
+    <string name="module_menu_cartdetail_submit_order_negative">更換桌號</string>
+    <string name="module_menu_cartdetail_submit_order_alert">該桌已開單，您可以選擇給該桌加菜，也可以選擇更換桌號</string>
+    <string name="module_menu_cartdetail_soldout">已售完</string>
+    <string name="module_menu_cart_empty_title">購物車是空的</string>
+    <string name="module_menu_cart_empty_subcontent">請返回到菜單頁面開始點菜</string>
+    <string name="module_menu_cart_expired_title">購物車已過期</string>
+    <string name="module_menu_cart_expired_subcontent">掛起時間超過2小時，請重新點菜</string>
+    <string name="module_menu_cart_spec_empty">請選擇規格</string>
+    <string name="module_menu_cart_make_empty">請選擇做法</string>
+    <string name="module_menu_cart_present_food_not_permission">您沒有「贈菜」權限，無法進行此操作！</string>
+    <string name="module_menu_cart_detail_num_too_small">數量必選大於零</string>
+    <!--購物車 詳情 END-->
+    <string name="module_menu_qr_find_instance_prompt">請掃描菜品二維碼</string>
+    <string name="module_menu_toast_please_scan_menu">你掃描的二維碼錯誤，請掃描菜品二維碼</string>
+
+    <string name="module_menu_cart_hangup_order_success">掛單成功</string>
+    <string name="module_menu_cart_hangup_order_fail">掛單失敗</string>
+
+    <!-- 零售模塊 START -->
+    <string name="module_menu_retail_title">開單</string>
+    <string name="module_menu_retail_custom_food_count">數量</string>
+    <string name="module_menu_retail_hint_search_food">商品名稱、簡拼或條形碼</string>
+    <string name="module_menu_retail_category">分類</string>
+    <string name="module_menu_retail_weigh_label">重量:</string>
+    <string name="module_menu_retail_weigh_input_hint">請輸入商品重量</string>
+    <string name="module_menu_retail_weigh_unit">kg</string>
+    <string name="module_menu_retail_add_to_cart">加入購物車</string>
+    <string name="module_menu_retail_please_enter_weigh">請輸入商品重量</string>
+    <string name="module_menu_retail_check_input_count">商品數量不能為空</string>
+    <string name="module_menu_retail_check_input_count_must_than_zero">商品數量必須大於0</string>
+    <string name="module_menu_retail_check_out">收款</string>
+    <string name="module_menu_retail_summary_food_num">%s件商品</string>
+    <string name="module_menu_retail_same_goods">請選擇同碼商品</string>
+    <string name="module_menu_retail_qr_find_instance_prompt">請掃描商品條形碼或二維碼</string>
+    <string name="module_menu_retail_scan">掃一掃</string>
+    <string name="module_menu_retail_nix">無</string>
+    <string name="module_menu_retail_cart_present_food_not_permission">您沒有“贈送商品”的權限，無法進行此操作！ </string>
+    <string name="module_menu_retail_cartdetail_presenter">贈送這個商品</string>
+    <string name="module_menu_retail_no_commodity">沒有此商品</string>
+    <string name="module_menu_retail_join_cart_success">%1$s添加成功</string>
+    <string name="module_menu_retail_cart_go_on">添加商品</string>
+    <string name="module_menu_retail_item">件</string>
+    <string name="module_menu_retail_no_barcode_label">—</string>
+    <string name="module_menu_retail_permission_order_begin_">您沒有“開單收款”的權限，無法進行此操作！ </string>
+    <string name="module_menu_retail_list_placeholder_price_unit">¥%1$s</string>
+    <!-- 零售模塊 END -->
+
+</resources>

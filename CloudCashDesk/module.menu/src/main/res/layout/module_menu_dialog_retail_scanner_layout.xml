@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/module_menu_shape_retail_weigh_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/module_menu_retail_same_goods"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/image_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/module_menu_ic_retail_weigh_close" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/module_menu_item_bg_color"
+            android:layout_below="@+id/rl_top">
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_height="1dp"
+                android:background="#C8C7CC" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_divider"
+            android:clipToPadding="false"
+            android:background="@color/module_menu_item_bg_color" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/module_menu_item_bg_color"
+    android:paddingBottom="@dimen/module_menu_list_margin">
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/module_menu_divider_height"
+        android:background="@color/module_menu_list_divider" />
+
+    <LinearLayout
+        android:id="@+id/layout_menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_weigh_food_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/module_menu_list_margin"
+            android:background="@drawable/module_res_shape_retail_weigh"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/module_res_label_retail_weigh"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/text_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            tools:text="青椒肉片A" />
+
+        <com.zmsoft.ccd.lib.widget.ShopSpecialityView
+            android:id="@+id/shop_speciality_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            app:module_menu_shop_speciality_chili_image="@drawable/module_menu_chili_rate"
+            app:module_menu_shop_speciality_chili_rate="2"
+            app:module_menu_shop_speciality_recommendation_image="@drawable/module_menu_recommend_rate"
+            app:module_menu_shop_speciality_recommendation_rate="2"
+            app:module_menu_shop_speciality_text="@string/module_menu_shop_specialty"
+            app:module_menu_shop_speciality_text_color="@color/module_menu_price_red"
+            app:module_menu_shop_speciality_text_size="10sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_bar_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_menu_name"
+        android:layout_marginLeft="@dimen/module_menu_list_margin"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#FF7D7D7D"
+        android:textSize="11sp"
+        tools:text="10000003782324243" />
+
+    <TextView
+        android:id="@+id/text_food_unit_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_bar_code"
+        android:layout_marginLeft="@dimen/module_menu_list_margin"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        tools:text="¥8.00/份"
+        tools:textColor="@color/module_menu_price_red" />
+
+    <com.zmsoft.ccd.lib.widget.FoodNumberTextView
+        android:id="@+id/edit_food_number_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/text_food_unit_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/module_menu_list_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:module_menu_left_image="@drawable/module_menu_food_number_minus"
+        app:module_menu_middle_max_value="10000"
+        app:module_menu_middle_min_value="0"
+        app:module_menu_middle_text_color="@color/module_menu_black"
+        app:module_menu_middle_text_size="14sp"
+        app:module_menu_right_image="@drawable/module_menu_food_number_plus" />
+
+    <TextView
+        android:id="@+id/text_clear_weigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/text_food_unit_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/module_menu_list_margin"
+        android:drawableLeft="@drawable/module_menu_ic_retail_clear_weigh"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:textColor="#FF000000"
+        android:textSize="14sp"
+        android:visibility="gone"
+        tools:text="10.57kg" />
+
+
+</RelativeLayout>

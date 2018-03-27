@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_select_menu_balance"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zmsoft.ccd.module.menubalance.SelectMenuBalanceActivity">
+
+    <LinearLayout
+        android:id="@+id/search_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/searchbar_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.zmsoft.ccd.widget.searchbar.SearchInputWidget
+            android:id="@+id/search_input_widget"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/searchbar_input_height"
+            android:layout_marginLeft="@dimen/searchbar_input_margin_left"
+            android:layout_marginRight="@dimen/searchbar_input_margin_right"
+            android:layout_weight="1"
+            app:search_hint="@string/search_view_instance_name_hint">
+
+        </com.zmsoft.ccd.widget.searchbar.SearchInputWidget>
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="@dimen/search_cancel_bt_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/cancel_bt_margin_right"
+            android:background="@android:color/transparent"
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/instance_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_view_container"
+        android:groupIndicator="@null">
+
+    </ExpandableListView>
+
+</RelativeLayout>

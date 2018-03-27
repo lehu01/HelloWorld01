@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f5"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view_divider"
+        style="@style/DividerStyle" />
+
+    <View
+        android:id="@+id/view_dash_divider"
+        style="@style/DashDividerStyle"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_divider"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/text_size_normal"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/text_category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_header_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/module_menu_cart_category_shape_group"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+</RelativeLayout>

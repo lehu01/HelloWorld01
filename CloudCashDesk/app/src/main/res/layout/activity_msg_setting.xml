@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/activity_msg_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="com.zmsoft.ccd.module.setting.MsgSettingActivity">
+
+        <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+            android:id="@+id/settingview_show_new_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:siv_explain="@string/show_new_msg_sub_title"
+            app:siv_title="@string/show_new_msg"
+            app:type="checkbox" />
+
+        <View style="@style/DividerStyle" />
+
+        <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+            android:id="@+id/settingview_receive_msg_from_waiter_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:siv_title="@string/receive_waiter_wechat_msg"
+            app:type="checkbox" />
+
+        <View
+            android:id="@+id/itemview_receive_msg_from_takeout"
+            style="@style/DividerStyle" />
+
+        <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+            android:id="@+id/settingview_receive_msg_from_takeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:siv_title="@string/receive_takeout_msg"
+            app:type="checkbox" />
+
+        <View
+            android:id="@+id/itemview_auto_check_takeout"
+            style="@style/DividerStyle" />
+
+        <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+            android:id="@+id/settingview_auto_check_takeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:siv_explain="@string/auto_check_takeout_sub_title"
+            app:siv_title="@string/auto_check_takeout"
+            app:type="checkbox" />
+
+        <View
+            android:id="@+id/itemview_auto_check_third_takeout"
+            style="@style/DividerStyle" />
+
+        <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+            android:id="@+id/settingview_auto_check_third_takeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:siv_explain="@string/auto_check_third_takeout_sub_title"
+            app:siv_title="@string/auto_check_third_takeout"
+            app:type="checkbox" />
+
+        <View
+            android:id="@+id/itemview_custom_tts"
+            style="@style/DividerStyle" />
+
+        <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+            android:id="@+id/settingview_custom_tts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:siv_explain="@string/custom_tts_sub_title"
+            app:siv_title="@string/custom_tts"
+            app:type="checkbox" />
+
+        <LinearLayout
+            android:id="@+id/layout_custom_tts_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/itemview_scan_order"
+                style="@style/DividerStyle" />
+
+            <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+                android:id="@+id/settingview_scan_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="0dp"
+                android:paddingStart="10dp"
+                app:siv_explain="@string/scan_order_sub_title"
+                app:siv_isSub="true"
+                app:siv_title="@string/scan_order"
+                app:type="checkbox" />
+
+            <View
+                android:id="@+id/itemview_takeout"
+                style="@style/DividerStyle" />
+
+            <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+                android:id="@+id/settingview_takeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="0dp"
+                android:paddingStart="10dp"
+                app:siv_explain="@string/takeout_sub_title"
+                app:siv_isSub="true"
+                app:siv_title="@string/takeout_title"
+                app:type="checkbox" />
+
+            <View
+                android:id="@+id/itemview_pay"
+                style="@style/DividerStyle" />
+
+            <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+                android:id="@+id/settingview_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="0dp"
+                android:paddingStart="10dp"
+                app:siv_explain="@string/pay_sub_title"
+                app:siv_isSub="true"
+                app:siv_title="@string/pay_title"
+                app:type="checkbox" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

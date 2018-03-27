@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/selector_transparent_bg_ripple"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="25dp"
+    android:paddingLeft="@dimen/padding_micro"
+    android:paddingRight="@dimen/padding_micro"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/padding_small"
+        android:drawableTop="@drawable/ic_accounted"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:text="@string/short_cut_receipt"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/text_size_normal" />
+</LinearLayout>

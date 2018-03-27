@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/module_takeout_shape_bg_search"
+        android:drawableLeft="@drawable/module_takeout_ic_edit_search"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="@string/module_takeout_search_hint"
+        android:imeOptions="actionSearch"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:textCursorDrawable="@drawable/edit_cursor_color"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="14dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+
+</LinearLayout>

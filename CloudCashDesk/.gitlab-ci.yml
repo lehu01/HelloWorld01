@@ -1,0 +1,19 @@
+stages:
+  - sonar
+#  - build
+#build:
+#  stage: build
+#  tags:
+#    - 2ye
+#  script:
+#    - export ANDROID_HOME=$ANDROID_HOME
+#    - git rev-list HEAD --count
+#    - ./gradlew assembleInternalSonar
+
+sonar:
+  stage: sonar
+  tags:
+    - 2ye
+  script:
+    - export ANDROID_HOME=$ANDROID_HOME
+    - ./gradlew clean sonarqube

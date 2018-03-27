@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/activity_msg_setting"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zmsoft.ccd.module.setting.MsgSettingActivity">
+
+    <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+        android:id="@+id/settingview_show_new_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:siv_explain="@string/show_new_msg_sub_title"
+        app:siv_title="@string/show_new_msg"
+        app:type="checkbox" />
+
+    <View style="@style/DividerStyle" />
+
+    <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+        android:id="@+id/settingview_receive_msg_from_waiter_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:siv_title="@string/receive_waiter_wechat_msg"
+        app:type="checkbox" />
+
+    <View
+        android:id="@+id/itemview_receive_msg_from_takeout"
+        style="@style/DividerStyle" />
+
+    <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+        android:id="@+id/settingview_receive_msg_from_takeout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:siv_title="@string/retail_receive_takeout_msg"
+        app:type="checkbox" />
+
+    <View
+        android:id="@+id/itemview_auto_check_takeout"
+        style="@style/DividerStyle" />
+
+    <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+        android:id="@+id/settingview_auto_check_takeout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:siv_explain="@string/auto_check_takeout_sub_title"
+        app:siv_title="@string/auto_check_takeout"
+        app:type="checkbox" />
+
+    <View
+        android:id="@+id/itemview_auto_check_third_takeout"
+        style="@style/DividerStyle" />
+
+    <com.zmsoft.ccd.widget.settingview.CcdSettingItemView
+        android:id="@+id/settingview_auto_check_third_takeout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:siv_explain="@string/auto_check_third_takeout_sub_title"
+        app:siv_title="@string/auto_check_third_takeout"
+        app:type="checkbox" />
+</LinearLayout>

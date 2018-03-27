@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/layout_discount_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_bg_ripple"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_content">
+
+            <TextView
+                android:id="@+id/text_discount_rate_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/module_receipt_discount_rate"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <com.zmsoft.ccd.lib.widget.EditFoodNumberView
+                android:id="@+id/edit_discount_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                app:module_menu_middle_max_value="100"
+                app:module_menu_middle_min_value="0"
+                app:module_menu_middle_text_color="@color/common_blue"
+                app:module_menu_middle_text_size="@dimen/text_size_normal"
+                app:module_menu_unit="@string/module_receipt_discount_rate_unit" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_below="@id/edit_discount_rate"
+                android:layout_marginTop="@dimen/margin_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_discount_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_bg_ripple"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_content">
+
+            <TextView
+                android:id="@+id/text_discount_reason_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/module_receipt_discount_reason"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/text_discount_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_toEndOf="@id/text_discount_reason_lable"
+                android:layout_toRightOf="@id/text_discount_reason_lable"
+                android:drawableEnd="@drawable/icon_item_right"
+                android:drawableRight="@drawable/icon_item_right"
+                android:ellipsize="end"
+                android:gravity="end"
+                android:singleLine="true"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_below="@id/text_discount_reason"
+                android:layout_marginTop="@dimen/margin_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_discount_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small">
+
+            <TextView
+                android:id="@+id/text_discount_switch_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/module_receipt_discount_switch"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/checkbox_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_sure"
+            style="@style/NormalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/bt_sure" />
+    </LinearLayout>
+</RelativeLayout>

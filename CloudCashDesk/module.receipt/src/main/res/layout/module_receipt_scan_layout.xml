@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zmsoft.component.codescanner.CodeScanView
+        android:id="@+id/codescan_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:qrcv_animTime="1000"
+        app:qrcv_borderColor="@color/toolbarColor"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@color/colorPrimaryDark"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="@color/colorPrimaryDark"
+        app:qrcv_topOffset="90dp" />
+
+    <TextView
+        android:id="@+id/text_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="@color/primaryColor"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/text_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_size_xhuge" />
+
+    <TextView
+        android:id="@+id/text_fee_feifan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/accentColor"
+        android:textSize="@dimen/text_size_xhuge"
+        android:visibility="gone"
+        tools:text="2324" />
+
+    <TextView
+        android:id="@+id/text_tip_feifan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_fee_feifan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="@color/primaryColor"
+        android:textSize="14sp"
+        android:visibility="gone"
+        tools:text="请使用扫码枪扫描顾客手机上的微信条码或二维码收款" />
+</RelativeLayout>

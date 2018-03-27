@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white80"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/shape_complete_layers" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/module_receipt_complete_title"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/text_size_normal" />
+
+        <LinearLayout
+            android:id="@+id/layout_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/margin_content"
+                android:background="@color/softkeyboard_divider" />
+
+            <RelativeLayout
+                android:id="@+id/layout_receivable_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/padding_content">
+
+                <TextView
+                    android:id="@+id/text_receivable_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:text="@string/module_receipt_receiveable"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/text_receivable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:text="¥180.00"
+                    tools:text="¥180.00"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <View
+                    style="@style/DividerStyle"
+                    android:layout_height="1px"
+                    android:layout_below="@id/text_receivable"
+                    android:layout_marginTop="@dimen/margin_content"
+                    android:background="@color/softkeyboard_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_actual_received"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/padding_content">
+
+                <TextView
+                    android:id="@+id/text_actual_received_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:text="@string/module_receipt_actual"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/text_actual_received"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_toEndOf="@id/text_actual_received_lable"
+                    android:layout_toRightOf="@id/text_actual_received_lable"
+                    android:gravity="center_vertical|end"
+                    android:lineSpacingExtra="3dp"
+                    android:orientation="horizontal"
+                    android:textColor="@color/accentColor"
+                    android:textSize="@dimen/text_size_normal"
+                    android:visibility="visible" />
+
+                <View
+                    style="@style/DividerStyle"
+                    android:layout_height="1px"
+                    android:layout_below="@id/text_actual_received"
+                    android:layout_marginTop="@dimen/margin_content"
+                    android:background="@color/softkeyboard_divider" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small">
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_red_stroke_button_toggle_bg"
+                android:gravity="center"
+                android:text="@string/module_receipt_complete_back"
+                android:textColor="@color/accentColor"
+                android:textSize="@dimen/text_size_large"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/button_over"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:background="@drawable/shape_red_button_toggle_ripple"
+                android:gravity="center"
+                android:text="@string/module_receipt_complete_over"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

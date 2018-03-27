@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout_order_complete"
+        android:layout_width="match_parent"
+        android:layout_height="236dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_paid_order_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@drawable/shape_order_complete_divider"
+                android:showDividers="middle">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/white80">
+
+                    <TextView
+                        android:id="@+id/text_order_complete_calendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/icon_paid_order_calendar"
+                        android:textColor="@color/accentColor"
+                        android:textSize="@dimen/text_size_normal"
+                        android:gravity="center"
+                        android:text="@string/order_complete_calendar_example"
+                        tools:ignore="RelativeOverlap" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="56dp"
+                        android:layout_marginLeft="56dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="12dp"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/primaryTextColor"
+                        android:text="@string/order_complete_today_earnings"
+                        tools:ignore="RelativeOverlap" />
+
+                    <TextView
+                        android:id="@+id/text_today_earnings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="56dp"
+                        android:layout_marginLeft="56dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="12dp"
+                        android:textSize="@dimen/text_size_xhuge"
+                        android:textColor="@color/accentColor"
+                        android:text="@string/order_complete_value_example" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_small"
+                        android:layout_marginRight="@dimen/margin_small"
+                        app:srcCompat="@drawable/icon_paid_order_summary_arrow"
+                        android:contentDescription="@string/order_complete_summary_arrow_description" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/white80"
+                    android:orientation="horizontal"
+                    android:divider="@drawable/shape_order_complete_divider"
+                    android:showDividers="middle"
+                    android:baselineAligned="false">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_small"
+                            android:textColor="@color/order_complete_text_view_title_color"
+                            android:text="@string/order_complete_total_number" />
+
+                        <TextView
+                            android:id="@+id/text_order_total_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="7dp"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_huge"
+                            android:textColor="@color/primaryTextColor"
+                            android:text="@string/order_complete_value_example" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_small"
+                            android:textColor="@color/order_complete_text_view_title_color"
+                            android:text="@string/order_complete_total_money" />
+
+                        <TextView
+                            android:id="@+id/text_order_total_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="7dp"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_huge"
+                            android:textColor="@color/primaryTextColor"
+                            android:text="@string/order_complete_value_example" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/white80"
+                    android:orientation="horizontal"
+                    android:divider="@drawable/shape_order_complete_divider"
+                    android:showDividers="middle"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:divider="@drawable/shape_order_complete_divider"
+                        android:showDividers="middle"
+                        android:baselineAligned="false">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:textSize="@dimen/text_size_small"
+                                android:textColor="@color/order_complete_text_view_title_color"
+                                android:text="@string/order_complete_paid_number" />
+
+                            <TextView
+                                android:id="@+id/text_order_completed_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                android:textSize="@dimen/text_size_large"
+                                android:textColor="@color/primaryTextColor"
+                                android:text="@string/order_complete_value_example" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:textSize="@dimen/text_size_small"
+                                android:textColor="@color/order_complete_text_view_title_color"
+                                android:text="@string/order_complete_unpaid_number" />
+
+                            <TextView
+                                android:id="@+id/text_order_uncompleted_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                android:textSize="@dimen/text_size_large"
+                                android:textColor="@color/primaryTextColor"
+                                android:text="@string/order_complete_value_example" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:divider="@drawable/shape_order_complete_divider"
+                        android:showDividers="middle"
+                        android:baselineAligned="false">
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:textSize="@dimen/text_size_small"
+                                android:textColor="@color/order_complete_text_view_title_color"
+                                android:text="@string/order_complete_paid_money" />
+
+                            <TextView
+                                android:id="@+id/text_order_completed_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                android:textSize="@dimen/text_size_large"
+                                android:textColor="@color/primaryTextColor"
+                                android:text="@string/order_complete_value_example" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:textSize="@dimen/text_size_small"
+                                android:textColor="@color/order_complete_text_view_title_color"
+                                android:text="@string/order_complete_unpaid_money" />
+
+                            <TextView
+                                android:id="@+id/text_order_uncompleted_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                android:textSize="@dimen/text_size_large"
+                                android:textColor="@color/primaryTextColor"
+                                android:text="@string/order_complete_value_example" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_paid_order_detail"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@color/white80">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/primaryTextColor"
+                    android:text="@string/order_particulars" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    app:srcCompat="@drawable/icon_paid_order_detail_arrow"
+                    android:contentDescription="@string/order_complete_detail_arrow_description" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_shop_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normal_gray"
+        android:paddingLeft="@dimen/padding_medium"
+        android:paddingRight="@dimen/padding_medium"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_update_shop_official"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:drawablePadding="2dp"
+            android:drawableRight="@drawable/icon_right_arrow_white"
+            android:paddingBottom="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_small"
+            android:text="@string/shop_update_official"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/shop_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_micro"
+            android:layout_marginRight="@dimen/margin_micro"
+            android:layout_toLeftOf="@id/text_update_shop_official"
+            android:ellipsize="end"
+            android:paddingBottom="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_small"
+            android:singleLine="true"
+            android:text="@string/shop_employ_0"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/text_size_small" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/text_open_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_transparent_bg_ripple"
+            android:drawablePadding="@dimen/padding_small"
+            android:drawableTop="@drawable/ic_open_order"
+            android:gravity="center_horizontal"
+            android:text="@string/home_open_order"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/text_shortcut_receipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_transparent_bg_ripple"
+            android:drawablePadding="@dimen/padding_small"
+            android:drawableTop="@drawable/ic_shortcut_receipt"
+            android:gravity="center_horizontal"
+            android:text="@string/retail_short_cut_receipt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white80"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_clock"
+            android:drawablePadding="@dimen/padding_small"
+            android:drawableStart="@drawable/ic_clock"
+            android:gravity="center_vertical"
+            android:text="@string/home_takeout_pending_delivery"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/text_takeout_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/icon_item_right"
+            android:drawablePadding="@dimen/padding_small"
+            android:drawableRight="@drawable/icon_item_right"
+            android:gravity="center_vertical"
+            android:textColor="@color/tertiaryTextColor"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <View
+        style="@style/DividerStyle"
+        android:layout_height="1px"
+        android:background="@color/softkeyboard_divider" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white80"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp" />
+</LinearLayout>

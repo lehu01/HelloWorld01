@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.zmsoft.ccd"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--定位权限-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--定位权限-->
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+    <!--蓝牙权限-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--蓝牙权限-->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <!--新大陆-->
+    <uses-permission android:name="android.permission.MANAGE_NEWLAND"/>
+    <uses-permission android:name="android.permission.MANAGE_NEWLANDUART3"/>
+
+    <application
+
+        android:name="com.zmsoft.app.ccd.GenCcdApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/CcdAppTheme">
+        <activity
+            android:name=".module.splash.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.login.login.LoginActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/login_app_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".module.checkshop.CheckShopActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/check_shop"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.checkshop.RetailCheckShopActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/check_shop"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.main.MainActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="true"
+            android:label=""
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name=".module.main.RetailMainActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="true"
+            android:label=""
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name=".module.main.order.detail.OrderDetailActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label=""
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.main.order.detail.RetailOrderDetailActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label=""
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.personal.profile.ProfileActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/my_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.personal.attention.AddAttenDeskActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/add_attention_seat_and_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.personal.feedback.FeedBackActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/feed_back"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.personal.about.AboutActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/about_2d_fire"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.personal.profile.modifypwd.ModifyPwdActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/modity_passowrd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.main.message.detail.MessageDetailActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/message_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.menubalance.MenuBalanceActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/menu_balance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.menubalance.EditMenuBalanceActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/edit_menu_balance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.menubalance.SelectMenuBalanceActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/select_menu_balance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.menubalance.AddMenuBalanceActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/add_menu_balance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.setting.MsgSettingActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/msg_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.setting.RetailMsgSettingActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/msg_setting"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.mistake.MistakeMsgActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/mistake_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.main.order.create.CreateOrUpdateOrderActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".module.main.order.memo.MemoListActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/remark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.main.order.remark.RetailRemarkActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/remark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.main.seat.selectseat.SelectSeatActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/select_seat_watched_seat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.instance.cancel.CancelOrGiveInstanceActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".module.instance.updateprice.UpdateInstancePriceIActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/update_price"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".module.instance.updateweight.UpdateInstanceWeightActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/update_weight"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".module.main.order.cancel.CancelOrderActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/cancel_order"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.main.order.cancel.RetailCancelOrderActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/cancel_order"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.scan.findorder.ScanFindOrderActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/qr_find_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.scan.findseat.ScanFindSeatActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/qr_change_seat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workmodel.WorkModelActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/select_work_model"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.printconfig.smallticket.SmallTicketPrintConfigActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/config_small_ticket_printer"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.carryout.CarryoutSettingActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/phone_carryout_setting_title"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.register.RegisterActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/register_2dfire"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.login.mobilearea.MobileAreaActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/select_mobile_area"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.shortcutreceipt.ShortCutReceiptActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/short_cut_receipt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.shortcutreceipt.RetailShortCutReceiptActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/retail_short_cut_receipt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.electronic.ElectronicListActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/home_electronic_cash_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.electronic.detail.ElectronicDetailActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/home_electronic_cash_detail_voucher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.electronic.detail.RetailElectronicDetailActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/home_electronic_cash_detail_voucher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.main.order.complete.OrderCompleteActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/end_pay_order"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.main.order.afterendpay.RetailAfterEndPayActivity"
+            android:configChanges="orientation|keyboard"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/end_pay_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.main.order.summary.OrderSummaryActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/order_summary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.main.order.particulars.OrderParticularsActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/order_particulars" />
+        <activity
+            android:name=".module.main.order.hangup.HangUpOrderListActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/hang_up_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.main.order.hangup.RetailHangUpOrderListActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/hang_up_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.printconfig.print.PrintConfigActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/config_print"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.printconfig.label.LabelPrintConfigActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/config_label_ticket_printer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.main.message.takeout.TakeoutDetailActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/message_detail"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.main.message.takeout.RetailTakeoutMsgDetailActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/message_detail"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.personal.networkdetection.NetworkDetectionActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/person_network_detection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.main.order.search.OrderSeatSearchActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/activity_label_order_seat_search"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- START JPush 用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.zmsoft.ccd.receiver.CcdJPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.zmsoft.ccd" />
+            </intent-filter>
+        </receiver>
+        <!-- END JPush 用户自定义的广播接收器-->
+
+        <receiver android:name=".receiver.TargetReceiver">
+            <intent-filter>
+                <action android:name="com.zmsoft.missile.MISSILE" />
+            </intent-filter>
+        </receiver>
+
+        <!--蓝牙广播-->
+        <receiver android:name="com.ccd.lib.print.broadcast.BluetoothBroadcast">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+                <action android:name="android.bluetooth.device.action.BOND_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!--电话状态广播-->
+        <receiver android:name=".receiver.PhoneBroadcastReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <!--服务-->
+        <service android:name="com.zmsoft.missile.MissileCoreService" />
+        <service android:name="com.ccd.lib.print.service.CcdPrintService" />
+        <service android:name="com.ccd.lib.print.service.LabelCcdPrintService" />
+
+        <!--fabric meta data-->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6c5d07fda44b358ffd7406e29f4d2bf382e3e2ce" />
+        <!--友盟-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59bf620cf5ade46d72000014"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.update.fileprovide"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!--元数据-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/margin_content"
+    android:paddingRight="@dimen/margin_content"
+    android:paddingTop="0dp">
+
+
+    <com.zmsoft.ccd.lib.widget.couponview.LinearLayoutCouponView
+        android:id="@+id/linear_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_item_bg"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:cv_is_semicircle_bottom="false"
+        app:cv_is_semicircle_top="true"
+        app:cv_semicircle_color="@color/cv_semicircle_color"
+        app:cv_semicircle_gap="@dimen/cv_semicircle_gap"
+        app:cv_semicircle_radius="@dimen/cv_semicircle_radius">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/msg_msgcenter_all"
+            android:textColor="@color/tertiaryTextColor"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/text_batch_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableEnd="@drawable/ic_uncheck_gray"
+            android:drawablePadding="@dimen/padding_micro"
+            android:drawableRight="@drawable/ic_uncheck_gray"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:text="@string/msg_msgcenter_batch_handle"
+            android:textColor="@color/tertiaryTextColor"
+            android:textSize="@dimen/text_size_small" />
+    </com.zmsoft.ccd.lib.widget.couponview.LinearLayoutCouponView>
+
+    <View
+        android:id="@+id/view_divider"
+        style="@style/DividerStyle"
+        android:visibility="invisible" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/padding_large" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

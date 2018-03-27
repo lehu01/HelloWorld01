@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/common_front_gery">
+    <item
+        android:id="@android:id/mask"
+        android:drawable="@color/white" />
+</ripple>
+<!--android:id="@android:id/mask"会让系统并不会真的绘制,并告知波纹的绘制边界-->
+<!--里面的色值可以任选一个-->

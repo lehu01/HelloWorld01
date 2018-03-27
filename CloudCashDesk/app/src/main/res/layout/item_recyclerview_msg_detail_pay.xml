@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zmsoft.ccd.lib.widget.couponview.LinearLayoutCouponView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_small"
+    app:cv_is_semicircle_bottom="true"
+    app:cv_is_semicircle_top="false"
+    app:cv_semicircle_color="@color/cv_semicircle_color"
+    app:cv_semicircle_gap="@dimen/cv_semicircle_gap"
+    app:cv_semicircle_radius="@dimen/cv_semicircle_radius">
+
+    <ImageView
+        android:id="@+id/image_pay_info_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_wechat" />
+
+    <TextView
+        android:id="@+id/text_pay_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_micro"
+        android:layout_marginStart="@dimen/margin_micro"
+        android:gravity="center_vertical"
+        tools:text="adsfsadf"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="@dimen/text_size" />
+
+</com.zmsoft.ccd.lib.widget.couponview.LinearLayoutCouponView>

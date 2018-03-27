@@ -1,0 +1,109 @@
+<resources>
+
+    <declare-styleable name="CouponView">
+        <attr name="cv_semicircle_gap" format="dimension|reference" />
+        <attr name="cv_semicircle_radius" format="dimension|reference" />
+        <attr name="cv_semicircle_color" format="color|reference" />
+        <attr name="cv_dash_line_length" format="dimension|reference" />
+        <attr name="cv_dash_line_gap" format="dimension|reference" />
+        <attr name="cv_dash_line_height" format="dimension|reference" />
+        <attr name="cv_dash_line_color" format="color|reference" />
+        <attr name="cv_is_semicircle_top" format="boolean|reference" />
+        <attr name="cv_is_semicircle_bottom" format="boolean|reference" />
+        <attr name="cv_is_semicircle_left" format="boolean|reference" />
+        <attr name="cv_is_semicircle_right" format="boolean|reference" />
+        <attr name="cv_is_dash_line_top" format="boolean|reference" />
+        <attr name="cv_is_dash_line_bottom" format="boolean|reference" />
+        <attr name="cv_is_dash_line_left" format="boolean|reference" />
+        <attr name="cv_is_dash_line_right" format="boolean|reference" />
+        <attr name="cv_dash_line_margin_top" format="dimension|reference" />
+        <attr name="cv_dash_line_margin_bottom" format="dimension|reference" />
+        <attr name="cv_dash_line_margin_left" format="dimension|reference" />
+        <attr name="cv_dash_line_margin_right" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="StateView">
+        <attr name="emptyResource" format="reference" />
+        <attr name="retryResource" format="reference" />
+        <attr name="loadingResource" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LinearLayoutDivider">
+        <attr name="dividerPadding_Start" format="dimension" />
+        <attr name="dividerPadding_End" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="sriv_four_corner_radius" format="dimension" />
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <!--pickerview-->
+    <declare-styleable name="pickerview">
+        <attr name="pickerview_gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="pickerview_textSize" format="dimension" />
+        <attr name="pickerview_textColorOut" format="color" />
+        <attr name="pickerview_textColorCenter" format="color" />
+        <attr name="pickerview_dividerColor" format="color" />
+        <attr name="pickerview_lineSpacingMultiplier" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="Module_Menu_EditFoodNumberView">
+        <attr name="module_menu_prefix_image" format="reference" />
+        <attr name="module_menu_left_image" format="reference" />
+        <attr name="module_menu_right_image" format="reference" />
+        <attr name="module_menu_middle_min_value" format="float" />
+        <attr name="module_menu_middle_max_value" format="float" />
+        <attr name="module_menu_middle_text_size" format="dimension" />
+        <attr name="module_menu_middle_text_color" format="color" />
+        <attr name="module_menu_middle_hint_color" format="color" />
+        <attr name="module_menu_middle_hint_text" format="reference" />
+        <attr name="module_menu_unit" format="reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="Module_Menu_ShopSpecialityView">
+        <attr name="module_menu_shop_speciality_chili_rate" format="integer" />
+        <attr name="module_menu_shop_speciality_recommendation_rate" format="integer" />
+        <attr name="module_menu_shop_speciality_chili_image" format="reference" />
+        <attr name="module_menu_shop_speciality_recommendation_image" format="reference" />
+        <attr name="module_menu_shop_speciality_text" format="reference" />
+        <attr name="module_menu_shop_speciality_text_size" format="dimension" />
+        <attr name="module_menu_shop_speciality_text_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchBarHeader">
+        <attr name="hint_text" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomSoftKeyboardView">
+        <attr name="confirm_bcg" format="reference" />
+        <attr name="confirm_text" format="reference" />
+        <attr name="confirm_text_color" format="color" />
+        <attr name="hideable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEmptyLayout">
+        <attr name="image_logo" format="reference" />
+        <attr name="text_desc" format="reference" />
+        <attr name="button_content" format="reference" />
+        <attr name="button_visiable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="StampView">
+        <attr name="sv_color" format="color" />
+        <attr name="sv_content_text" format="reference" />
+        <attr name="sv_sub_text" format="reference" />
+    </declare-styleable>
+</resources>

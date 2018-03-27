@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/module_menu_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/module_menu_shape_red_button"
+            android:text="@string/module_menu_add_to_cart"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_label_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/module_menu_number"
+            android:textColor="#FF333333"
+            android:textSize="15sp" />
+
+        <com.zmsoft.ccd.lib.widget.FoodNumberTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/text_label_number"
+            app:module_menu_left_image="@drawable/module_menu_food_number_minus"
+            app:module_menu_middle_max_value="10000"
+            app:module_menu_middle_min_value="0"
+            app:module_menu_middle_text_color="@color/module_menu_black"
+            app:module_menu_middle_text_size="14sp"
+            app:module_menu_right_image="@drawable/module_menu_food_number_plus" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relative_bottom"
+        android:layout_below="@id/toolbar" />
+
+</RelativeLayout>

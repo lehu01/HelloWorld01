@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_sold_out"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:dividerHeight="1px"
+            android:paddingBottom="80dp" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.zmsoft.ccd.lib.widget.emptylayout.CustomEmptyLayout
+        android:id="@+id/layout_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:button_visiable="false"
+        app:image_logo="@drawable/ic_empty_logo"
+        app:text_desc="@string/menu_balance_empty" />
+
+    <TextView
+        android:id="@+id/add_menu_balance"
+        style="@style/BottomRightTextRedCircleStyle"
+        android:drawableTop="@drawable/ic_plus"
+        android:text="@string/menu_balance_add"
+        android:visibility="gone" />
+
+</RelativeLayout>
+

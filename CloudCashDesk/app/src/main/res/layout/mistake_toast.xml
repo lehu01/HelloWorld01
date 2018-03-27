@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mistake_toast_height"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:background="@drawable/mistake_toast_bg"
+    android:gravity="center_vertical"
+    android:padding="@dimen/padding_small">
+
+    <RelativeLayout
+        android:id="@+id/layout_warm_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_warm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:src="@drawable/icon_notification"/>
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_warm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/layout_warm_icon"
+        android:textColor="@color/common_front_black"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <TextView
+        android:id="@+id/text_seat_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/text_id"
+        android:textColor="@color/common_front_black"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <Button
+        android:id="@+id/button_mistake_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:background="@null"
+        android:drawablePadding="2dp"
+        android:drawableRight="@drawable/icon_item_right"
+        android:text="查看详情"
+        android:textSize="11sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/text_mistake_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_warm_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/layout_warm_icon"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/common_front_black"
+        android:textSize="@dimen/text_size_large"/>
+
+</RelativeLayout>

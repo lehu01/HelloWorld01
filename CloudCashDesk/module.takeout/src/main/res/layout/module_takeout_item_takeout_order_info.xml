@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingBottom="18dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp">
+
+
+    <TextView
+        android:id="@+id/text_takeout_order_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="6sp"
+        android:textColor="#7d7d7d"
+        android:textSize="12sp"
+        tools:text="下单时间：2017-07-08 12:13
+接单时间：2017-07-08 12:17
+订单流水号：17070812002374590" />
+
+
+    <TextView
+        android:id="@+id/text_takeout_order_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/text_takeout_order_repeal"
+        android:background="@drawable/module_takeout_shape_takeout_order_menu_gray"
+        android:gravity="center"
+        android:text="@string/module_takeout_order_change"
+        android:textColor="#4d4d4d"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

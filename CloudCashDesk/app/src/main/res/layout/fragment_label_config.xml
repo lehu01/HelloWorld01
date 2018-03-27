@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zmsoft.ccd.lib.widget.LinearLayoutDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_content"
+            android:paddingRight="@dimen/padding_content"
+            app:divider="@drawable/shape_divider_line"
+            app:showDividers="middle">
+
+            <!--标签-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_content"
+                android:paddingTop="@dimen/padding_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/use_label_print"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+            <!--打印机类型-->
+            <RelativeLayout
+                android:id="@+id/relative_print_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_normal"
+                android:paddingBottom="@dimen/padding_content"
+                android:paddingTop="@dimen/padding_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/print_type"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/text_print_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/icon_item_right"
+                    android:textColor="@color/common_blue"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </RelativeLayout>
+
+            <!--设置蓝牙打印机-->
+            <RelativeLayout
+                android:id="@+id/relative_blue_tooth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_normal"
+                android:paddingBottom="@dimen/padding_content"
+                android:paddingTop="@dimen/padding_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/set_bluetooth_print"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/image_blue_tooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_blue_tooth_normal" />
+
+                <TextView
+                    android:id="@+id/text_blue_booth_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_micro"
+                    android:layout_toLeftOf="@id/image_blue_tooth"
+                    android:gravity="center"
+                    android:text="@string/please_select"
+                    android:textColor="@color/common_blue"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </RelativeLayout>
+
+            <!--设置网口打印机-->
+            <RelativeLayout
+                android:id="@+id/relative_net"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_content"
+                android:paddingTop="@dimen/padding_content">
+
+                <TextView
+                    android:id="@+id/text_print_ip_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/print_ip"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <EditText
+                    android:id="@+id/edit_input_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_toRightOf="@id/text_print_ip_display"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/please_input_print_ip"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/common_blue"
+                    android:textSelectHandleRight="@color/tab_bg"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textCursorDrawable="@drawable/edit_cursor_color"/>
+
+            </RelativeLayout>
+            <!--标签纸型号-->
+            <LinearLayout
+                android:id="@+id/linear_label_model_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_normal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_content"
+                android:paddingTop="@dimen/padding_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/label_paper_type"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/text_label_byte"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/secondaryTextColor"
+                        android:textSize="@dimen/text_size_normal" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/padding_small"
+                    android:text="@string/label_paper_type_prompt"
+                    android:textColor="#7d7d7d"
+                    android:textSize="@dimen/text_size_small" />
+
+            </LinearLayout>
+
+        </com.zmsoft.ccd.lib.widget.LinearLayoutDivider>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/padding_content"
+            android:text="@string/label_config_prompt"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/button_ok"
+            style="@style/NormalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_content"
+            android:layout_marginRight="@dimen/margin_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:gravity="center"
+            android:text="@string/test_print_page"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

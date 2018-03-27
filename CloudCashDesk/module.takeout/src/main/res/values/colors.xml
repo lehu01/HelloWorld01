@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="module_takeout_red">#e02200</color>
+    <color name="module_takeout_gray">#7d7d7d</color>
+    <color name="module_takeout_white">#e0e0e0</color>
+    <color name="module_takeout_delivery_current">#e02200</color>
+    <color name="module_takeout_delivery_history">#666666</color>
+    <color name="module_takeout_food_num">#666666</color>
+    <color name="module_takeout_food_num_red">#e02200</color>
+
+
+    <color name="module_takeout_status_name_arrived">#00c297</color>
+    <color name="module_takeout_status_name_delivering">#ffa21c</color>
+    <color name="module_takeout_status_name_other">#e02200</color>
+
+
+
+
+</resources>

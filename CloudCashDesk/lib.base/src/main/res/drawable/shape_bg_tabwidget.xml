@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="#D7D7D7" />
+        </shape>
+    </item>
+    <item android:top="@dimen/height_line">
+        <color android:color="@color/primaryColor" />
+    </item>
+
+</layer-list>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_order_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="@string/right_filter_title_example" />
+
+    <com.zmsoft.ccd.lib.widget.flextboxlayout.CustomFlexboxLayout
+        android:id="@+id/layout_order_filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp" />
+
+    <View
+        android:id="@+id/view_divider_filters"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.1"
+        android:background="@color/primaryDarkColor" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/primaryColor"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/module_receipt_vip_card"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <ImageView
+            android:id="@+id/image_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:paddingBottom="@dimen/padding_small"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_micro"
+            android:src="@drawable/icon_delete"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/DividerStyle"/>
+
+    <com.zmsoft.ccd.lib.widget.LinearLayoutDivider
+        android:id="@+id/linear_vip_card_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:divider="@drawable/shape_divider_line"
+        app:showDividers="middle"/>
+
+</LinearLayout>

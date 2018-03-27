@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_small">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eaf0f6"
+        android:paddingBottom="@dimen/padding_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_content">
+
+        <ImageView
+            android:id="@+id/iamge_takeout_order_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/module_takeout_ic_order_address" />
+
+        <LinearLayout
+            android:id="@+id/layout_takeout_order_taker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_toEndOf="@id/iamge_takeout_order_address"
+            android:layout_toRightOf="@id/iamge_takeout_order_address"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_takeout_order_taker_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="@string/module_takeout_delivery_receiver_name"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/text_takeout_order_taker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginLeft="@dimen/margin_micro"
+                android:layout_marginStart="@dimen/margin_micro"
+                android:textStyle="bold"
+                tools:text="王先生" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_takeout_order_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/text_size_small"
+            tools:text="15258805045" />
+
+        <TextView
+            android:id="@+id/text_takeout_order_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/layout_takeout_order_taker"
+            android:layout_alignStart="@id/layout_takeout_order_taker"
+            android:layout_below="@id/iamge_takeout_order_address"
+            android:lineSpacingExtra="0sp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/text_size_small"
+            tools:text="杭州市拱墅区教工路552号2楼888室" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_content">
+
+        <TextView
+            android:id="@+id/text_takeout_order_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/ic_order_from_meituan"
+            android:gravity="center_horizontal"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/text_size_small"
+            tools:text="美团" />
+
+        <TextView
+            android:id="@+id/text_takeout_order_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_toEndOf="@id/text_takeout_order_original"
+            android:layout_toRightOf="@id/text_takeout_order_original"
+            android:includeFontPadding="false"
+            android:text="@string/module_takeout_delivery_current_order"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/text_takeout_order_current"
+            android:layout_alignStart="@id/text_takeout_order_current"
+            android:layout_below="@id/text_takeout_order_current"
+            android:layout_marginTop="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_takeout_delivery_order_foods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:singleLine="true"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_small"
+                tools:text="商品：土豆烧鸡、土豆烧鸡土豆烧鸡土豆烧鸡腊肉饭土豆烧鸡、腊肉饭土豆烧鸡、腊肉饭" />
+
+            <TextView
+                android:id="@+id/text_takeout_delivery_order_foods_total_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_micro"
+                android:layout_marginStart="@dimen/margin_micro"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_small"
+                tools:text="（共计7件）" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_takeout_delivery_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/normal_bule"
+            android:textSize="@dimen/text_size_micro"
+            tools:text="No.28" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        style="@style/DividerStyle"
+        android:layout_marginTop="@dimen/margin_large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding_small">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/module_takeout_delivery_way"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/text_delivery_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_arrow_down"
+            android:drawablePadding="@dimen/padding_small"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:gravity="center_vertical"
+            android:text="@string/module_takeout_delivery_way_select"
+            android:textColor="@color/accentColor"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+</LinearLayout>

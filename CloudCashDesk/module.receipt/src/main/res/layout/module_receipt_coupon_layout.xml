@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/linear_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/layout_receivable_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_bg_ripple"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_content">
+
+            <TextView
+                android:id="@+id/text_receivable_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/module_receipt_receivable_money"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/text_receivable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="¥180.00"
+                tools:text="¥180.00"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_below="@id/text_receivable"
+                android:layout_marginTop="@dimen/margin_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_coupon_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/gray_bg"
+            android:padding="@dimen/padding_small"
+            android:text="@string/module_receipt_coupon_fee"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="@dimen/text_size_normal" />
+
+        <LinearLayout
+            android:id="@+id/layout_coupon_fee_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/layout_coupon_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/selector_white_bg_ripple"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_content">
+
+            <TextView
+                android:id="@+id/text_coupon_num_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/module_receipt_coupon_num"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <com.zmsoft.ccd.lib.widget.EditFoodNumberView
+                android:id="@+id/edit_coupon_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                app:module_menu_middle_max_value="1000"
+                app:module_menu_middle_min_value="0"
+                app:module_menu_middle_text_color="@color/common_blue"
+                app:module_menu_middle_text_size="@dimen/text_size_normal" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_below="@id/edit_coupon_num"
+                android:layout_marginTop="@dimen/margin_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_actual_received"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_bg_ripple"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_content">
+
+            <TextView
+                android:id="@+id/text_actual_received_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/module_receipt_actual_received_money"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/text_actual_received"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                tools:text="¥50.00"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_below="@id/text_actual_received"
+                android:layout_marginTop="@dimen/margin_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_bg_ripple"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_content">
+
+            <TextView
+                android:id="@+id/text_discount_fee_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/module_receipt_offers_money"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/text_discount_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                tools:text="¥5.00"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_below="@id/text_discount_fee"
+                android:layout_marginTop="@dimen/margin_content" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_sure"
+            style="@style/NormalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/bt_sure" />
+
+    </LinearLayout>
+</ScrollView>

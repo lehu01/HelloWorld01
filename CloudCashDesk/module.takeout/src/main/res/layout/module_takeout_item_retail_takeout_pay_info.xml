@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/text_module_takeout_pay_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/module_takeout_pay_label"
+        android:textColor="#7d7d7d"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_module_takeout_pay_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_module_takeout_pay_label"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/text_module_takeout_pay_label"
+        android:gravity="right"
+        android:lineSpacingExtra="6dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:text="[微信]¥236.00，会员卡¥50.00" />
+
+
+    <View
+        style="@style/Module_Takeout_Divider"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/text_module_takeout_pay_detail"
+        android:layout_marginTop="17dp" />
+</RelativeLayout>

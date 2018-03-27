@@ -1,0 +1,144 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="CustomAppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!--定义所有Theme的基本属性-->
+    <style name="CustomAppTheme" parent="CustomAppBaseTheme">
+        <!-- Toolbar高度 -->
+        <item name="actionBarSize">@dimen/height_toolBar</item>
+        <!-- Toolbar背景颜色 -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <!-- 色彩突显 -->
+        <item name="colorAccent">@color/accentColor</item>
+        <!-- 图标颜色 -->
+        <item name="colorControlNormal">@color/controlNormalColor</item>
+        <!-- 默认字体颜色 -->
+        <item name="android:textColor">@color/tertiaryTextColor</item>
+        <!-- 提示字体颜色 -->
+        <item name="android:textColorHint">@color/hintTextColor</item>
+        <!--&lt;!&ndash; 输入框字体颜色 &ndash;&gt;-->
+        <item name="android:editTextColor">@color/hintTextColor</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@color/windowBackgroundColor</item>
+        <!-- MenuItem的字体颜色 -->
+        <item name="actionMenuTextColor">@color/primaryColor</item>
+        <!-- MenuItem Style -->
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <!--<item name="android:windowAnimationStyle">@style/SmoothWindowAnimation</item>-->
+        <item name="android:progressBarStyle">@style/LoadingProgressBar</item>
+
+        <item name="actionOverflowMenuStyle">@style/MyPopupMenuOverflow</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButton</item>
+        <item name="colorButtonNormal">@color/accentColor</item>
+    </style>
+
+    <!-- @style/Widget.AppCompat.Button.Borderless.Colored -->
+    <style name="WhiteButton" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/selector_btn_white</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="NormalButton" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/selector_btn_red</item>
+        <item name="android:minHeight">42dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+        <item name="android:layout_marginBottom">@dimen/margin_medium</item>
+        <item name="android:layout_marginLeft">@dimen/margin_medium</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium</item>
+    </style>
+
+    <style name="MyOverflowButton" parent="Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/icon_add</item>
+    </style>
+
+    <style name="MyPopupMenuOverflow" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="android:dropDownVerticalOffset">?attr/actionBarSize</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+    </style>
+
+    <style name="MenuTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:minWidth">24dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="LoadingProgressBar" parent="@style/Widget.AppCompat.ProgressBar">
+        <item name="android:minWidth">42dp</item>
+        <item name="android:maxWidth">42dp</item>
+        <item name="android:minHeight">42dp</item>
+        <item name="android:maxHeight">42dp</item>
+    </style>
+
+    <style name="LoadingDialogTheme">
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:progressBarStyle">@style/LoadingProgressBar</item>
+    </style>
+
+    <style name="DialogNoAnimation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="BottomSheetDialog">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="SmoothWindowAnimation">
+        <!-- 打开Activity时的入场动画 -->
+        <item name="android:activityOpenEnterAnimation">@anim/activity_slide_right_enter</item>
+        <!-- 打开Activity时的退场动画 -->
+        <item name="android:activityOpenExitAnimation">@anim/activity_slide_left_exit</item>
+        <!-- 关闭Activity时的入场动画 -->
+        <item name="android:activityCloseEnterAnimation">@anim/activity_slide_left_enter</item>
+        <!-- 关闭Activity时的退场动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/activity_slide_right_exit</item>
+    </style>
+
+    <!--提醒类Textview style-->
+    <style name="ComboTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:minWidth">18dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_red_corner</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+    <!--长矩形Textview背景style-->
+    <style name="RectTextBgStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <!--自定义CouponView style-->
+    <style name="CouponDividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/cv_semicircle_color</item>
+    </style>
+</resources>

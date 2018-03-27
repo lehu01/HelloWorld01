@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zmsoft.ccd.lib.widget.LinearLayoutDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        app:divider="@drawable/shape_divider_line"
+        app:showDividers="middle">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/text_label_food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/module_menu_custom_food_margin"
+                android:layout_marginRight="10dp"
+                android:text="@string/module_menu_custom_food_label_name"
+                android:textColor="#FF333333"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edit_food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/module_menu_custom_food_margin"
+                android:layout_toRightOf="@id/text_label_food_name"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/module_menu_input_require"
+                android:maxLength="30"
+                android:maxLines="2"
+                android:paddingLeft="20dp"
+                android:textColor="@color/common_blue"
+                android:textColorHint="#FFE02200"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/edit_cursor_color">
+
+                <requestFocus />
+            </EditText>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_category"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/module_menu_custom_food_margin"
+                android:text="@string/module_menu_custom_food_label_category"
+                android:textColor="#FF333333"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/text_category"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/module_menu_arrow_down"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/module_menu_custom_food_margin"
+                android:text="@string/module_menu_select_category"
+                android:textColor="@color/common_blue"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/module_menuTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/module_menu_custom_food_margin"
+                android:text="@string/module_menu_custom_food_order_count"
+                android:textColor="#FF333333"
+                android:textSize="14sp" />
+
+            <com.zmsoft.ccd.lib.widget.EditFoodNumberView
+                android:id="@+id/edit_food_order_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/module_menu_custom_food_margin"
+                android:gravity="center_vertical"
+                app:module_menu_middle_hint_color="@color/module_menu_number_hint"
+                app:module_menu_middle_hint_text="@string/module_menu_input_require"
+                app:module_menu_middle_max_value="10000"
+                app:module_menu_middle_min_value="0"
+                app:module_menu_middle_text_color="@color/common_blue"
+                app:module_menu_middle_text_size="14sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/module_menu_custom_food_margin"
+                android:text="@string/module_menu_custom_food_label_unit"
+                android:textColor="#FF333333"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/text_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:maxLength="2"
+                android:paddingLeft="30dp"
+                android:paddingRight="@dimen/module_menu_custom_food_margin"
+                android:singleLine="true"
+                android:text="@string/module_menu_default_order_unit"
+                android:textColor="@color/common_blue"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/edit_cursor_color"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/module_menu_custom_food_margin"
+                android:text="@string/module_menu_custom_food_label_same_unit"
+                android:textColor="#FF333333"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_same_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/module_menu_custom_food_margin"
+                android:checked="true" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_account_num"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/module_menu_custom_food_margin"
+                android:text="@string/module_menu_custom_food_account_count"
+                android:textColor="#FF333333"
+                android:textSize="14sp" />
+
+
+            <com.zmsoft.ccd.lib.widget.EditFoodNumberView
+                android:id="@+id/edit_food_account_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/module_menu_custom_food_margin"
+                android:gravity="center_vertical"
+                app:module_menu_middle_hint_color="@color/module_menu_number_hint"
+                app:module_menu_middle_hint_text="@string/module_menu_input_require"
+                app:module_menu_middle_max_value="10000"
+                app:module_menu_middle_min_value="0"
+                app:module_menu_middle_text_color="@color/common_blue"
+                app:module_menu_middle_text_size="14sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_account_unit"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/module_menu_custom_food_margin"
+                android:text="@string/module_menu_custom_food_account_unit"
+                android:textColor="#FF333333"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/text_account_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:maxLength="2"
+                android:paddingLeft="20dp"
+                android:paddingRight="@dimen/module_menu_custom_food_margin"
+                android:singleLine="true"
+                android:text="@string/module_menu_default_account_unit"
+                android:textColor="@color/common_blue"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/edit_cursor_color"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/module_menu_custom_food_margin"
+                android:text="@string/module_menu_custom_food_label_price"
+                android:textColor="#FF333333"
+                android:textSize="14sp" />
+
+
+            <com.zmsoft.ccd.lib.widget.EditFoodNumberView
+                android:id="@+id/edit_food_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/module_menu_custom_food_margin"
+                android:gravity="center_vertical"
+                app:module_menu_middle_hint_color="@color/module_menu_number_hint"
+                app:module_menu_middle_hint_text="@string/module_menu_input_require"
+                app:module_menu_middle_max_value="10000"
+                app:module_menu_middle_min_value="0"
+                app:module_menu_middle_text_color="@color/common_blue"
+                app:module_menu_middle_text_size="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/module_menu_custom_food_margin"
+                android:text="@string/module_menu_custom_food_label_can_discount"
+                android:textColor="#FF333333"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_can_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/module_menu_custom_food_margin" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_label_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/module_menu_custom_food_margin"
+                android:layout_marginTop="15dp"
+                android:text="@string/module_menu_custom_food_label_note"
+                android:textColor="#FF333333"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edit_food_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/text_label_note"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/module_menu_input_custom_food_note"
+                android:inputType="text"
+                android:maxLength="32"
+                android:paddingBottom="14dp"
+                android:paddingLeft="@dimen/module_menu_custom_food_margin"
+                android:paddingRight="@dimen/module_menu_custom_food_margin"
+                android:paddingTop="11dp"
+                android:textColor="#FF999999"
+                android:textColorHint="#FF999999"
+                android:textSize="13sp"
+                android:textCursorDrawable="@drawable/edit_cursor_color"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_transfers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/text_label_pass_through"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/module_menu_custom_food_margin"
+                android:text="@string/module_menu_custom_food_label_pass_through"
+                android:textColor="#FF333333"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_transfer_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/text_label_pass_through"
+                android:layout_centerInParent="true"
+                android:background="@drawable/module_menu_shape_red_button"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/module_menu_load_transfer_failed_retry"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <com.zmsoft.ccd.lib.widget.flextboxlayout.CustomFlexboxLayout
+                android:id="@+id/flex_box_pass_through"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_label_pass_through"
+                android:layout_marginLeft="@dimen/module_menu_custom_food_margin"
+                android:layout_marginTop="16dp" />
+
+        </RelativeLayout>
+
+
+    </com.zmsoft.ccd.lib.widget.LinearLayoutDivider>
+</ScrollView>

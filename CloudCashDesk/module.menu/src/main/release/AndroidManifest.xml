@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.zmsoft.ccd.module.menu"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity
+            android:name=".menu.ui.MenuListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".menu.ui.RetailMenuListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".cart.view.CartActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/module_menu_cart"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".cart.view.RetailCartActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:label="@string/module_menu_cart"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".menu.ui.CustomFoodActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".menu.ui.RetailCustomFoodActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".menu.ui.SuitNoteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".menu.ui.SuitDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".cart.view.CartDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".cart.view.RetailCartDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".cart.view.MenuScannerActivity"
+            android:label="@string/module_menu_scan"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".cart.view.RetailMenuScannerActivity"
+            android:label="@string/module_menu_retail_scan"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+    </application>
+
+</manifest>

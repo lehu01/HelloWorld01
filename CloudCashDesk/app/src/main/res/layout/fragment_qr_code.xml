@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/qr_code"
+             android:orientation="vertical">
+
+    <!--<SurfaceView-->
+        <!--android:id="@+id/preview_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal|center_vertical"/>-->
+
+    <!--<com.uuzuche.lib_zxing.view.ViewfinderView-->
+        <!--android:id="@+id/viewfinder_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--app:inner_corner_color="@color/tertiaryTextColor"-->
+        <!--app:inner_corner_length="15dp"-->
+        <!--app:inner_corner_width="2dp"-->
+        <!--app:inner_height="200dp"-->
+        <!--app:inner_margintop="150dp"-->
+        <!--app:inner_scan_iscircle="false"-->
+        <!--app:inner_scan_speed="10"-->
+        <!--app:inner_width="200dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_hint2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical|center_horizontal"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:gravity="center"-->
+        <!--android:lineSpacingExtra="3dp"-->
+        <!--android:text="@string/please_seat_code"-->
+        <!--android:textColor="#d7d7d7"-->
+        <!--android:textSize="@dimen/text_size_large"/>-->
+
+</FrameLayout>

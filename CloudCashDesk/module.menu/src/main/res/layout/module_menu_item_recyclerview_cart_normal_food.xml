@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_jag_up"
+        layout="@layout/item_divider_jag" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_item_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small">
+
+        <View
+            android:id="@+id/view_divider"
+            style="@style/DividerStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding_small"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_userhead"
+                    android:layout_width="@dimen/module_menu_cart_width_userhead_normal"
+                    android:layout_height="@dimen/module_menu_cart_width_userhead_normal"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_user_default" />
+
+                <TextView
+                    android:id="@+id/text_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_micro"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:maxLines="1"
+                    android:textColor="@color/tertiaryTextColor"
+                    android:textSize="@dimen/text_size_micro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/text_food_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:drawableEnd="@drawable/module_menu_ic_modify"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@drawable/module_menu_ic_modify"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:id="@+id/text_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/text_food_name"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/accentColor"
+                            android:textSize="@dimen/text_size_normal" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_food_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_foods_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical|right"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="@dimen/text_size_normal"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/text_foods_account_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical|right"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="@dimen/text_size_normal"
+                            android:visibility="gone" />
+
+                        <com.zmsoft.ccd.lib.widget.FoodNumberTextView
+                            android:id="@+id/edit_first_food_number_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            app:module_menu_left_image="@drawable/module_menu_food_number_minus"
+                            app:module_menu_middle_max_value="10000"
+                            app:module_menu_middle_min_value="0"
+                            app:module_menu_middle_text_color="@color/primaryTextColor"
+                            app:module_menu_middle_text_size="@dimen/text_size_normal"
+                            app:module_menu_right_image="@drawable/module_menu_food_number_plus"
+                            app:module_menu_unit="@string/module_menu_food_unit" />
+
+                        <com.zmsoft.ccd.lib.widget.FoodNumberTextView
+                            android:id="@+id/edit_second_food_number_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_micro"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            app:module_menu_left_image="@drawable/module_menu_food_number_minus"
+                            app:module_menu_middle_max_value="10000"
+                            app:module_menu_middle_min_value="0"
+                            app:module_menu_middle_text_color="@color/primaryTextColor"
+                            app:module_menu_middle_text_size="@dimen/text_size_normal"
+                            app:module_menu_right_image="@drawable/module_menu_food_number_plus"
+                            app:module_menu_unit="@string/module_menu_food_unit" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_makename_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:background="@drawable/shape_dot_line"
+                    android:layerType="software" />
+
+                <TextView
+                    android:id="@+id/text_makename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="@dimen/padding_small"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="@dimen/padding_small"
+                    android:paddingStart="0dp"
+                    android:paddingTop="@dimen/padding_small"
+                    android:textColor="@color/tertiaryTextColor"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_jag_bottom"
+        layout="@layout/item_divider_bottom_jag" />
+</LinearLayout>

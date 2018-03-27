@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/text_filter_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/module_takeout_filter_label"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_divider"
+        style="@style/Module_Takeout_Divider"
+        android:layout_height="1dp"
+        android:layout_below="@id/text_filter_label"
+        android:layout_marginTop="20dp"
+        android:alpha="0.1"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            style="@style/Module_Takeout_Divider"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:alpha="0.1"
+            android:background="#000000" />
+
+
+        <TextView
+            android:id="@+id/text_item_filter_reset"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/shape_flexitem_normal"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/module_takeout_filter_reset"
+            android:textColor="#4d4d4d"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_item_filter_finish"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/text_item_filter_reset"
+            android:background="@drawable/module_takeout_shape_filter_finish"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/module_takeout_filter_confirm"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_menu"
+        android:layout_below="@id/view_divider"
+        android:clipToPadding="false"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/ll_filters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_click_retry"
+        android:layout_width="72dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/module_takeout_shape_takeout_order_menu_red"
+        android:gravity="center"
+        android:text="@string/module_takeout_click_retry"
+        android:textColor="#e02200"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

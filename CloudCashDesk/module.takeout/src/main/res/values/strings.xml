@@ -1,0 +1,192 @@
+<resources>
+    <string name="module_takeout_app_name">在线外卖</string>
+
+    <string name="module_takeout_label_takeout_list">在线外卖</string>
+    <string name="module_takeout_label_takeout_search">搜索</string>
+    <string name="module_takeout_good_name_label">商品</string>
+    <string name="module_takeout_pay_label">支付明细</string>
+
+
+    <string name="module_takeout_order_send_kitchen">下单到厨房</string>
+    <string name="module_takeout_order_change">改单</string>
+    <string name="module_takeout_order_print">打印</string>
+    <string name="module_takeout_order_revoke">撤单</string>
+    <string name="module_takeout_order_revoke_continue">继续撤单</string>
+    <string name="module_takeout_pending_order_dispatch">选择配送订单</string>
+    <string name="module_takeout_order_dispatch">配送</string>
+    <string name="module_takeout_order_dispatch_cancel">取消配送</string>
+    <string name="module_takeout_order_self_took">已自取</string>
+    <string name="module_takeout_order_arrived">已送达</string>
+    <string name="module_takeout_order_checkout">结账完毕</string>
+
+
+    <string name="module_takeout_detail_toggle">收起详情</string>
+    <string name="module_takeout_reserve_flag">预约外卖</string>
+
+    <string name="module_takeout_bar_menu_tip_search">搜索</string>
+    <string name="module_takeout_filter">筛选</string>
+
+
+    <string name="module_takeout_order_no">No.%1$s</string>
+    <string name="module_takeout_order_take_person">%1$s：%2$s（%3$s）</string>
+    <string name="module_takeout_bar_member_card">%1$s￥%2$s</string>
+    <string name="module_takeout_bar_pay_freight">(含配送费：%1$s)</string>
+    <string name="module_takeout_comma">，</string>
+    <string name="module_takeout_prefix_receiver">收货人</string>
+    <string name="module_takeout_prefix_receiver_self">取餐人</string>
+
+    <string name="module_takeout_take_time_self">顾客自取时间：%1$s</string>
+    <string name="module_takeout_take_time">顾客要求送达时间：%1$s</string>
+    <string name="module_takeout_take_by_other">送货上门</string>
+    <string name="module_takeout_take_self">到店自取</string>
+
+    <string name="module_takeout_waiting_take_by_self">待自取</string>
+    <string name="module_takeout_waiting_dispatch">待配送</string>
+    <string name="module_takeout_un_cook">未下厨</string>
+    <string name="module_takeout_waiting_delivery">等候配送</string>
+    <string name="module_takeout_waiting_delivering">配送中</string>
+    <string name="module_takeout_arrived">已送达</string>
+    <string name="module_takeout_delivery_exception">配送异常</string>
+    <string name="module_takeout_status_unknown">未知</string>
+
+
+    <string name="module_takeout_order_from_name_meituan">美团</string>
+    <string name="module_takeout_order_from_name_xiaoer">小二</string>
+    <string name="module_takeout_order_from_name_baidu">百度</string>
+    <string name="module_takeout_order_from_name_eleme">饿了么</string>
+
+    <string name="module_takeout_order_item_open">收起详情</string>
+    <string name="module_takeout_order_item_close">展开详情</string>
+
+    <string name="module_takeout_order_good_num">共%1$d件</string>
+    <string name="module_takeout_order_people_num">用餐人数：%1$d</string>
+    <string name="module_takeout_order_memo">备注：%1$s</string>
+    <string name="module_takeout_order_food_num">x %1$s</string>
+
+    <string name="module_takeout_order_order_info">下单时间：%1$s\n接单时间：%2$s\n订单流水号：%3$s</string>
+    <string name="module_takeout_horse_man_name">骑手：%1$s</string>
+
+    <string name="module_takeout_horse_man_waiting_receive">等待骑手接单</string>
+    <string name="module_takeout_horse_man_received">骑手已接单</string>
+    <string name="module_takeout_horse_man_took">骑手已取餐</string>
+    <string name="module_takeout_horse_man_arrived">骑手已送达</string>
+    <string name="module_takeout_horse_man_exception">配送出现异常</string>
+    <string name="module_takeout_horse_man_unknown">骑手未知</string>
+    <string name="module_takeout_delivery_time">于%1$s发起配送</string>
+    <string name="module_takeout_delivery_express_code">运单号: %1$s</string>
+
+    <string name="module_takeout_checkout_failed_actual_greater_need">结账完毕失败，支付金额大于应收金额</string>
+
+
+    <string name="module_takeout_delivery_current_order">当前配送订单</string>
+    <string name="module_takeout_delivery_way">配送方式</string>
+    <string name="module_takeout_delivery_company">快递公司</string>
+    <string name="module_takeout_delivery_no">运单号</string>
+    <string name="module_takeout_delivery_shop_courier">配送员</string>
+    <string name="module_takeout_delivery_platform">配送平台</string>
+    <string name="module_takeout_delivery_shop_fee">预估运费</string>
+    <string name="module_takeout_delivery_way_select">必填</string>
+    <string name="module_takeout_delivery_third_hint">确定配送后骑手将上门取货</string>
+    <string name="module_takeout_delivery_order_current">当前配送订单（%1$d）</string>
+    <string name="module_takeout_delivery_pending_order">选择其他待配送订单（%1$d）</string>
+    <string name="module_takeout_order_status_more">更多</string>
+    <string name="module_takeout_filter_label">筛选条件</string>
+    <string name="module_takeout_filter_confirm">完成</string>
+    <string name="module_takeout_filter_reset">重置</string>
+    <string name="module_takeout_text_filter_end_time_label">结束日期</string>
+    <string name="module_takeout_text_filter_start_time_label">开始日期</string>
+    <string name="module_takeout_click_retry">点击重试</string>
+    <string name="module_takeout_list_load_failed">加载外卖失败，稍后重试</string>
+    <string name="module_takeout_empty">暂无外卖订单</string>
+    <string name="module_takeout_search_hint">请输入订单流水号、单号或手机号码</string>
+    <string name="module_takeout_suit">套餐</string>
+    <string name="module_takeout_order_cancel_success">撤单成功</string>
+    <string name="module_takeout_order_cancel_failed">撤单失败</string>
+    <!--配送-->
+    <string name="module_takeout_delivery_foods_total_num">(共计%1$d件)</string>
+    <string name="module_takeout_delivery_receiver_name">收货人: </string>
+    <string name="module_takeout_delivery_receiver_name_placeholder">收货人: %1$s</string>
+    <string name="module_takeout_delivery_method_default">必填</string>
+    <string name="module_takeout_delivery_empty">暂无配送信息</string>
+    <string name="module_takeout_delivery_info_label">配送信息</string>
+    <string name="module_takeout_delivery_dialog_close">关闭</string>
+    <string name="module_takeout_delivery_code_no">No.</string>
+    <string name="module_takeout_delivery_courier">配送方式</string>
+    <string name="module_takeout_delivery_courier_with_fee">%1$s   预估运费%2$s</string>
+    <string name="module_takeout_delivery_courier_no_fee">%1$s   当前地址无法预估运费</string>
+    <string name="module_takeout_delivery_courier_shunfeng">顺丰配送</string>
+    <string name="module_takeout_delivery_courier_dada">达达配送</string>
+    <string name="module_takeout_delivery_courier_get_error">获取配送方式失败，%1$s</string>
+    <string name="module_takeout_delivery_courier_empty">暂无配送员，请前往【掌柜-重要设置-外卖】 添加配送员</string>
+    <string name="module_takeout_delivery_sure">确定</string>
+    <string name="module_takeout_today_order_num">今日(共%1$d单)</string>
+    <string name="module_takeout_yesterday_order_num">昨日(共%1$d单)</string>
+    <string name="module_takeout_day_order_num">%1$s(共%2$d单)</string>
+    <string name="module_takeout_please_select_time">去选择</string>
+    <string name="module_takeout_please_select_start_time">请选择开始日期</string>
+    <string name="module_takeout_please_select_end_time">请选择结束日期</string>
+    <string name="module_takeout_dialog_title">提示</string>
+    <string name="module_takeout_dialog_content_cancel_order">确认撤单后，订单的收款金额将原路退回至顾客账号，请谨慎操作！</string>
+    <string name="module_takeout_dialog_cancel_delivery">取消配送可能需要缴纳违约金，确定继续取消吗？</string>
+    <string name="module_takeout_dialog_cancel_delivery_shunfeng">顺丰配送取消后无法再次发起，且取消配送可能需要缴纳违约金，确定继续取消吗？</string>
+    <string name="module_takeout_dialog_cancel_delivery_positive">确定</string>
+    <string name="module_takeout_dialog_cancel_delivery_negative">取消</string>
+
+    <string name="module_takeout_delivery_fail_dialog_close">取消</string>
+    <string name="module_takeout_delivery_fail_dialog_sure">重发配送</string>
+    <string name="module_takeout_operate_success_un_cook">下单到厨房成功</string>
+    <string name="module_takeout_operate_success_self_take">订单自取成功</string>
+    <string name="module_takeout_operate_success_cancel_delivery">取消配送成功</string>
+    <string name="module_takeout_operate_success_order_arrive">订单已送达成功</string>
+    <string name="module_takeout_operate_success_checkout">订单结账完毕成功</string>
+    <string name="module_takeout_operate_success">订单操作成功</string>
+    <string name="module_takeout_order_from_show_name">%1$s-%2$s</string>
+
+
+    <string name="module_takeout_permission_action_cancel_order">撤单</string>
+    <string name="module_takeout_cancel_order_reason">撤单原因</string>
+    <string name="module_takeout_continue_cancel_positive">继续撤单</string>
+    <string name="module_takeout_continue_cancel_negative">关闭</string>
+    <string name="module_takeout_delivery_immediatelu">立即送出</string>
+    <string name="module_takeout_print_waiting">正在请求打印，请稍后</string>
+    <string name="module_takeout_operation_success">操作成功</string>
+    <string name="module_takeout_delivery_all_success">配送成功</string>
+    <string name="module_takeout_delivery_fail">配送失败</string>
+    <string name="module_takeout_delivery_current_fail_with_other_all_success">当前订单（No.%1$s）配送失败，%2$s另有%3$d单其他订单配送成功！</string>
+    <string name="module_takeout_delivery_current_fail_with_other_all_fail">当前订单（No.%1$s）配送失败，%2$s另有%3$d单其他订单配送失败！</string>
+    <string name="module_takeout_delivery_current_fail_with_other_some_fail">当前订单（No.%1$s）配送失败，%2$s另有%3$d单其他订单配送成功，%4$d单订单配送失败！</string>
+    <string name="module_takeout_delivery_current_success_with_other_some_fail">当前订单（No.%1$s）配送成功！另有%2$d单其他订单配送成功，%3$d单订单配送失败！</string>
+    <string name="module_takeout_delivery_current_success_with_other_all_fail">当前订单（No.%1$s）配送成功！另有%2$d单其他订单配送失败！</string>
+    <string name="module_takeout_delivery_fee">已扣减配送费: %1$s</string>
+
+
+    <!--零售相关===============start-->
+    <string name="module_takeout_label_retail_takeout_list">线上订单</string>
+    <string name="module_takeout_retail_take_self">到店自提</string>
+    <string name="module_takeout_retail_prefix_receiver_self">提货人</string>
+    <string name="module_takeout_retail_reserve_flag">预约</string>
+    <string name="module_takeout_retail_no_barcode_label">—</string>
+    <string name="module_takeout_order_from_name_weidian">微店</string>
+    <string name="module_takeout_retail_permission_print_account">您没有“补打小票”的权限，无法进行此操作！</string>
+    <string name="module_takeout_retail_empty">暂无线上订单</string>
+    <string name="module_takeout_retail_order_people_num">人数：%1$d</string>
+    <string name="module_takeout_retail_take_time_self">顾客自提时间：%1$s</string>
+    <string name="module_takeout_retail_waiting_take_by_self">待自提</string>
+    <string name="module_takeout_retail_order_self_took">已自提</string>
+
+    <!--零售相关===============end-->
+
+
+    <string name="module_takeout_delivery_some_success">%1$d单配送成功</string>
+    <string name="module_takeout_delivery_some_fail">%1$d单配送失败</string>
+    <string name="module_takeout_delivery_fee_some_success">"（已扣减配送费: ￥%1$s）"</string>
+    <string name="module_takeout_delivery_no_please_scan">请扫描运单号</string>
+    <string name="module_takeout_delivery_fee_none">暂无预估运费</string>
+    <string name="module_takeout_delivery_type_none">请选择配送方式</string>
+    <string name="module_takeout_delivery_company_none">请选择快递公司</string>
+    <string name="module_takeout_delivery_order_no_none">请填写运单号</string>
+    <string name="module_takeout_delivery_platform_none">请选择配送平台</string>
+    <string name="module_takeout_delivery_courier_none">请选择配送员</string>
+    <string name="module_takeout_delivery_batch">批量配送</string>
+    <string name="module_takeout_empty_delivery">暂无待配送订单</string>
+</resources>

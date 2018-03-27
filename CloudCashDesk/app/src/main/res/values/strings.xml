@@ -1,0 +1,902 @@
+<resources>
+    <!--公用-->
+    <string name="login_app_title">二维火收银</string>
+    <string name="bt_sure">确认</string>
+    <string name="defaults">-</string>
+    <string name="exit_app">再按一次退出应用程序</string>
+    <string name="save">保存</string>
+
+    <!--闪页模块-->
+    <string name="splash_from">二维火出品</string>
+    <string name="open_cloud_cash_desk">开启二维火收银(手机版)</string>
+    <string name="request_permission_content">为了您能正常使用二维火收银，需要开启</string>
+
+    <!--登录模块-->
+    <string name="hit_user_name">手机号码</string>
+    <string name="hit_user_pwd">密码</string>
+    <string name="btn_login">登录</string>
+    <string name="toast_no_user_name">手机号不能为空！</string>
+    <string name="toast_is_no_valid_phone">请输入正确的手机号！</string>
+    <string name="toast_no_user_pwd">密码不能为空！</string>
+    <string name="pass_word_length">密码必须是6到20位字母或数字！</string>
+
+    <!--选店-->
+    <string name="check_shop">我工作的店家</string>
+    <string name="hit_shop_name_and_code">店家名称/店家编码</string>
+    <string name="please_input_seat_code">请输入桌号</string>
+    <string name="check_shop_dialog_title">确定选择该店铺？</string>
+
+    <string name="ok">确定</string>
+    <!--主界面tab-->
+    <string name="main_tab_find_order">找单</string>
+    <string name="main_tab_msg_center">消息中心</string>
+    <string name="main_filter">展示方式</string>
+    <string name="main_tab_set">我的</string>
+    <string name="main_activity_menu_item_search">搜索</string>
+
+    <string name="activity_label_order_seat_search">搜索</string>
+
+    <!--新手指引-->
+    <string name="main_activity_green_hand_next">下一步</string>
+    <string name="main_activity_green_hand_start_use">开始使用</string>
+    <string name="main_activity_green_hand_step_1_hint">无需点菜直接收款</string>
+    <string name="main_activity_green_hand_step_2_hint">查看已结账单、\n账单汇总</string>
+    <string name="main_activity_green_hand_step_3_hint">管理外卖订单</string>
+    <string name="main_activity_green_hand_step_4_hint">未结的桌位单、零售单</string>
+    <string name="main_activity_green_hand_step_5_hint">扫码点菜、加菜、支付等消息</string>
+    <string name="main_activity_green_hand_step_6_hint">配置小票、标签打印机</string>
+
+
+    <!--未关注座位和订单-->
+    <string name="main_no_attention_title">你还没有添加关注的桌位或订单</string>
+    <string name="main_no_attention_button">立即添加</string>
+    <string name="main_no_attention_order_content">关注后才能处理订单，接收顾客消息</string>
+    <string name="main_no_attention_message_content">消息中心中默认展示您关注的座位或订单的消息 </string>
+    <string name="main_no_attention_place_content">在 “右侧栏” - “我关注的桌位或订单” 进行管理</string>
+
+    <string name="select_seat_watched_seat">我关注的桌位</string>
+    <string name="select_seat_all_seat">全部桌位</string>
+    <string name="text_select_seat_none_watch_title">您没有关注的桌位</string>
+    <string name="text_select_seat_none_watch_content">在“找单”页面可以添加关注的桌位</string>
+
+
+    <!--订单列表-->
+    <string name="order_list_header_title">关注的订单</string>
+    <string name="table_list_header_title">关注的桌位</string>
+    <string name="order_list_search_hit">请输入订单号</string>
+    <string name="no_pay">未付款</string>
+    <string name="no_pay_all">未付清</string>
+    <string name="pay_all">已付清</string>
+    <string name="end_pay">已结账</string>
+
+    <!--订单下拉筛选-->
+    <string name="filter">筛选</string>
+    <string name="filter_order_type_title">订单类型</string>
+    <string name="filter_order_state_title">订单状态</string>
+    <string name="filter_ok">完成</string>
+    <string name="filter_cancel">取消</string>
+
+    <!--个人中心-->
+    <string name="person_head">头像</string>
+    <string name="person_phone_num">手机号码</string>
+    <string name="person_name">姓名</string>
+    <string name="person_sex">性别</string>
+    <string name="person_modify_password">修改密码</string>
+    <string name="person_profile">个人信息</string>
+    <string name="person_attention">我关注的桌位或订单</string>
+    <string name="customer_service">在线客服</string>
+    <string name="person_feedback">意见反馈</string>
+    <string name="person_about">关于二维火</string>
+    <string name="person_logout">退出登录</string>
+    <string name="person_logout_hint">确认要退出登录吗？</string>
+    <string name="person_logout_and_offwork_hint">确认要退出登录并下班吗？</string>
+    <string name="person_feedback_hint">客官，满不满意您都发句话。</string>
+    <string name="person_feedback_contact_email">您的邮箱:</string>
+    <string name="person_feedback_contact_email_hint">选填，方便我们给您反馈</string>
+    <string name="person_feedback_send_feedback">发送反馈意见</string>
+    <string name="person_feedback_send_feedback_success">意见反馈发送成功</string>
+    <string name="person_feedback_send_feedback_empty_hint">意见反馈不能为空！</string>
+    <string name="person_about_url">www.2dfire.com</string>
+    <string name="person_about_company_name">杭州迪火科技有限公司</string>
+    <string name="person_about_dfire_produced">二维火出品</string>
+    <string name="person_profile_modifypwd_oldpwd">原密码</string>
+    <string name="person_profile_modifypwd_newpwd">新密码</string>
+    <string name="person_profile_modifypwd_newpwd_not_equals_confirm">您两次输入的密码不一致，请仔细检查</string>
+    <string name="person_profile_modifypwd_confirmpwd">密码确认</string>
+    <string name="person_profile_modifypwd_oldpwd_hint">请输入旧密码</string>
+    <string name="person_profile_modifypwd_newpwd_hint">请输入6位以上密码</string>
+    <string name="person_profile_modifypwd_confirmpwd_hint">请再次确认密码</string>
+    <string name="person_profile_modifypwd_success">密码修改成功</string>
+    <string name="attention_deskarea_empty_hint">其他</string>
+    <string name="msg_attention_desk_delete_area_hint">确定要删除%1$s下所有关注的桌位吗？</string>
+    <string name="msg_attention_desk_kind_random">散座</string>
+    <string name="msg_attention_desk_kind_box">包厢</string>
+    <string name="msg_attention_desk_kind_card">卡座</string>
+    <string name="msg_attention_desk_customer_number">%1$d人</string>
+    <string name="msg_attention_desk_kind">%1$d人%2$s</string>
+    <string name="msg_attention_desk_kind_bracket">&#40;%1$d人%2$s&#41;</string>
+    <string name="person_network_detection">网络检测</string>
+
+    <!--在线客服-->
+    <string name="customer_service_app_version">应用版本：</string>
+    <string name="customer_service_phone_version">用户系统：</string>
+    <string name="customer_service_not_login_user">未登录用户-</string>
+
+    <!--消息中心-->
+    <string name="desk_msg_deskid">桌号: %1$s</string>
+    <string name="desk_msg_orderid">单号: %1$s</string>
+    <string name="desk_msg_taketout_orderid">%1$s 单号: %2$s</string>
+    <string name="desk_msg_taketout_title">%1$s外卖</string>
+    <string name="desk_msg_iknow">我知道了</string>
+    <string name="desk_msg_handle_now">马上审核</string>
+    <string name="desk_msg_handled">已处理</string>
+    <string name="desk_msg_accepted">已同意</string>
+    <string name="desk_msg_rejected">已拒绝</string>
+    <string name="desk_msg_timeout">已超时</string>
+    <string name="msg_detail_order_deskid">桌号</string>
+    <string name="msg_detail_order_peoplecount">人数 %1$d</string>
+    <string name="msg_detail_order_remark">客单备注: %1$s</string>
+    <string name="msg_detail_order_code">No.%1$s</string>
+    <string name="msg_detail_foods_count">%1$d份</string>
+    <string name="msg_detail_price_format">%1$s</string>
+    <string name="msg_detail_price_negative_format">%1$s</string>
+    <string name="msg_detail_combo_foods_count">x%1$s</string>
+    <string name="msg_detail_order_agree">同意</string>
+    <string name="msg_detail_order_reject">拒绝</string>
+    <string name="msg_detail_order_reject_hint">您确定要拒绝本次加菜吗?</string>
+    <!--找单-->
+    <string name="order_find_retail_code">No.%d</string>
+    <string name="order_find_text_desk_desc_example">（四人散座）</string>
+    <string name="order_find_image_customer_number_description">用餐人数图标</string>
+    <string name="order_find_text_customer_number">4人</string>
+    <string name="order_find_text_eat_time_example">60分钟</string>
+    <string name="order_find_text_desk_name_example">A1</string>
+    <string name="order_find_image_pay_all_description">已付清图标</string>
+    <string name="order_find_image_desk_eat_time_description">用餐时间图标</string>
+    <string name="order_find_image_order_find_print_description">是否打印图标</string>
+    <string name="order_find_eat_time">%d分钟</string>
+    <!--找单-搜索-->
+    <string name="order_search_type_seat">桌位</string>
+    <string name="order_search_type_retail_order">单号</string>
+    <string name="order_seat_search_empty_seat">没有找到相符的桌位</string>
+    <string name="order_seat_search_empty_order">没有找到相符的零售订单</string>
+    <string name="order_seat_search_order_hit">请输入零售单的订单号</string>
+
+    <string name="mast_fill">必填</string>
+    <string name="cancel">取消</string>
+    <string name="msg_msgcenter_category">消息分类</string>
+    <string name="msg_msgcenter_new">关注的新消息(我关注的)</string>
+    <string name="msg_msgcenter_customer_new">关注的新消息</string>
+    <string name="msg_msgcenter_handled">已处理消息</string>
+    <string name="msg_msgcenter_all">所有新消息</string>
+    <string name="msg_msgcenter_batch_handle">全部标记为已处理</string>
+    <string name="msg_msgcenter_result_all_handled">已处理</string>
+    <string name="msg_msgcenter_result_all_handled_hint">确定将不需要审核的新消息标记为已处理（共%1$d条）？（包括支付、服务铃消息）</string>
+    <string name="msg_msgcenter_addfood_scan_desk_content">扫码点菜，%1$d个菜</string>
+    <string name="msg_msgcenter_addfood_scan_order_content">扫码加菜，%1$d个菜</string>
+    <string name="msg_msgcenter_autocheck_scan_desk_content">扫码加菜，%1$d个菜</string>
+    <string name="msg_msgcenter_prepay_scan_desk_content">扫码点菜，%1$d个菜，已支付%2$s元，%3$s</string>
+    <!--商品沽清-->
+    <string name="menu_balance">商品沽清</string>
+    <string name="edit_menu_balance">编辑沽清商品</string>
+    <string name="add_menu_balance">添加沽清商品</string>
+    <string name="select_menu_balance">选择沽清商品</string>
+    <string name="status_sold_out">已售完</string>
+    <string name="sold_out_instance_name">商品名称</string>
+    <string name="sold_out_instance_status">库存状态</string>
+    <string name="sold_out_instance_no">库存数量</string>
+    <string name="cancel_sold_out">取消沽清</string>
+    <string name="already_sold_out">已售完</string>
+    <string name="not_sold_out">未售完</string>
+    <string name="select_sold_out_instance">选择沽清商品</string>
+    <string name="search_view_instance_name_hint">请输入菜肴名称</string>
+    <string name="input_last_count_warm">请输入库存数量</string>
+    <string name="get_all_menu_error">获取商品列表失败</string>
+    <string name="no_sold_out_menu">没有更多沽清商品</string>
+    <string name="get_menu_balance_failure">获取沽清商品失败</string>
+    <string name="get_menu_failure">获取菜品列表失败</string>
+    <string name="add_menu_balance_failure">添加沽清商品失败</string>
+    <string name="update_menu_balance_failure">更新沽清商品失败</string>
+    <string name="cancel_menu_balance_failure">取消沽清商品失败</string>
+    <string name="menu_balance_num_input_null">请输入库存数量</string>
+    <string name="menu_balance_num_input_error">沽清数量不能大于1000</string>
+    <string name="clear_all_menu_balance_warn">确定要清空沽清吗？</string>
+    <string name="menu_balance_clear">清空沽清</string>
+    <string name="menu_balance_empty">暂无沽清商品</string>
+    <string name="menu_balance_add">添加</string>
+
+    <string name="order_no_end_pay">暂无已结账单</string>
+
+    <string name="mistake_title">异常提示</string>
+    <string name="mistake_msg_title">此处显示2小时内的异常提示</string>
+    <string name="seat_name">桌号:</string>
+
+    <string name="shop_keeper">二维火掌柜</string>
+    <string name="prompt_install_shopkeeper">您未安装二维火掌柜，是否立即安装？</string>
+    <string name="install_app_immediately">立即安装</string>
+
+    <!--新版已结账单页面-->
+    <string name="order_complete_calendar_example">22</string>
+    <string name="order_complete_value_example"> </string>
+    <string name="order_complete_today_earnings">今日收益(元)</string>
+    <string name="order_complete_summary_arrow_description">跳至账单汇总页面的箭头图标</string>
+    <string name="order_complete_total_number">账单总数</string>
+    <string name="order_complete_paid_number">已结账单数</string>
+    <string name="order_complete_unpaid_number">未结账单数</string>
+    <string name="order_complete_total_money">账单总金额(元)</string>
+    <string name="order_complete_paid_money">已结账金额(元)</string>
+    <string name="order_complete_unpaid_money">未结账金额(元)</string>
+    <string name="order_complete_detail_arrow_description">跳至账单明细页面的箭头图标</string>
+
+    <!--订单右侧筛选栏-->
+    <string name="filter_title_source">订单来源</string>
+    <string name="filter_item_source_all">全部</string>
+    <string name="filter_item_source_desk">桌位单</string>
+    <string name="filter_item_source_retail">零售单</string>
+    <string name="filter_item_source_waiter_takeout">小二外卖</string>
+    <string name="filter_item_source_meituan">美团</string>
+    <string name="filter_item_source_elme">饿了么</string>
+    <string name="filter_item_source_baidu">百度</string>
+    <string name="filter_title_cashier">收银员</string>
+    <string name="filter_item_cashier_all">全部</string>
+    <string name="filter_item_cashier_current">当前收银员</string>
+    <string name="filter_title_date">日期</string>
+    <string name="filter_item_date_today">今日</string>
+    <string name="filter_item_date_yesterday">昨日</string>
+    <string name="filter_item_date_within_two_days">两日内</string>
+
+    <!--账单汇总-->
+    <string name="order_summary">账单汇总</string>
+    <string name="print">打印</string>
+    <string name="order_summary_paid_order_number">已结账单数</string>
+    <string name="order_summary_paid_order_money">已结账金额</string>
+    <string name="order_summary_unpaid_order_number">未结账单数</string>
+    <string name="order_summary_unpaid_order_money">未结账金额</string>
+    <string name="order_summary_total_order_number">账单总数</string>
+    <string name="order_summary_total_order_money">账单总金额</string>
+    <string name="order_summary_cash">现金</string>
+    <string name="order_summary_discount_in_the_shop">本店在线优惠</string>
+    <string name="order_summary_total_consumption">消费合计</string>
+    <string name="order_summary_total_discount">折扣合计</string>
+    <string name="order_summary_total_profit_and_loss">损益合计</string>
+    <string name="order_summary_total_wiping_zero">抹零合计</string>
+    <string name="order_summary_total_discount_coupon">券优惠合计</string>
+    <string name="order_summary_total_revenue">实收</string>
+    <string name="order_summary_disregard_turnover">不计营业额</string>
+    <string name="order_summary_value_example"> </string>
+    <string name="order_summary_number_example"> </string>
+    <string name="order_summary_middle_value_format">%d笔</string>
+    <string name="order_summary_value_format">%.2f</string>
+
+    <!--账单明细-->
+    <string name="order_particulars">账单明细</string>
+    <string name="order_particulars_search_hit">请输入单号</string>
+    <string name="order_particulars_time_yyyymmdd_example">2017-10-10</string>
+    <string name="order_particulars_order_id_example">No.1</string>
+    <string name="order_particulars_source_example">桌号:A01</string>
+    <string name="order_particulars_serial_number_example">流水号:201707081620</string>
+    <string name="order_particulars_time_hhmm_example">17:50</string>
+    <string name="order_particulars_consumption_example">99.00</string>
+    <string name="order_particulars_empty">暂无已结账单</string>
+    <string name="order_particulars_search_none">没有找到相符的已结账单</string>
+    <string name="order_particulars_order_code_format">No.%d</string>
+    <string name="order_particulars_consumption_format">%.2f</string>
+    <string name="order_particulars_seat_code_desk_format">桌号：%s</string>
+    <string name="order_particulars_seat_code_retail">桌号：-</string>
+    <string name="order_particulars_serial_number_format">流水号:%s</string>
+
+    <!--消息提示-->
+    <string name="msg_setting">消息设置</string>
+    <string name="show_new_msg">接收推送消息</string>
+    <string name="show_new_msg_sub_title">关闭后，将不会收到推送消息</string>
+    <string name="receive_waiter_wechat_msg">接收来自二维火小二、微信等的服务铃消息</string>
+    <string name="receive_takeout_msg">接收外卖单消息</string>
+    <string name="auto_check_takeout">自动审核小二外卖单</string>
+    <string name="auto_check_takeout_sub_title">打开后，将自动审核本店所有小二外卖单</string>
+    <string name="auto_check_third_takeout">自动审核第三方外卖单</string>
+    <string name="auto_check_third_takeout_sub_title">打开后，将自动审核本店所有第三方外卖单</string>
+    <string name="custom_tts">不同类型的消息使用不同的提示音</string>
+    <string name="custom_tts_sub_title">默认为统一的提示音，如需不同类型的消息提示不同的语音，可打开此开关，进行设置</string>
+    <string name="scan_order">堂食订单</string>
+    <string name="scan_order_sub_title">xx桌，顾客扫码下单了</string>
+    <string name="takeout_title">外卖订单</string>
+    <string name="takeout_sub_title">您有一个{外卖来源}订单</string>
+    <string name="pay_title">支付</string>
+    <string name="pay_sub_title">xx桌，{付款方式}收款xx元</string>
+    <string name="upload_msg_setting_failure">更新消息设置失败</string>
+    <string name="get_msg_setting_failure">获取消息设置失败</string>
+
+    <!--消息详情-->
+    <string name="know">我知道了</string>
+    <string name="audit">马上审核</string>
+    <string name="deal_with">马上处理</string>
+    <string name="table_number">桌号：</string>
+    <string name="msg_detail_pay_info">%1$s于%2$s分%3$s支付了%4$s</string>
+    <string name="msg_detail_pay_orderno">(%1$s交易单号: %2$s)</string>
+    <!--订单详情-->
+    <string name="consumption_money">消费金额</string>
+    <string name="offers_money">优惠金额</string>
+    <string name="origin_least_amount">最低消费</string>
+    <string name="service_money">服务费</string>
+    <string name="receipt_detail">收款详情</string>
+    <string name="confirm_order_instance">已下单的菜</string>
+    <string name="remarks">客单备注：%s</string>
+    <string name="people">人</string>
+    <string name="people_number">人数：</string>
+    <string name="part">份</string>
+    <string name="yuan_format">%s</string>
+    <string name="receivable_money">应收：</string>
+    <string name="received_money">已收：</string>
+    <string name="need_pay">还需收款：</string>
+    <string name="pay_more">多收款：</string>
+    <string name="pay_less">少收款：</string>
+    <string name="clear_zero">抹零：</string>
+
+    <string name="order_detail_guide_food_example">凉拌海蜇头</string>
+    <string name="order_detail_guide_remark_example">大份，红烧，加年糕，不放辣椒，不放蒜</string>
+    <string name="order_detail_guide_money_example">¥20.00</string>
+    <string name="order_detail_guide_number_example">1份</string>
+    <string name="order_detail_guide_number_status_hint">已审核：表示商品未厨打\n已下厨：表示商品已厨打</string>
+    <string name="order_detail_guide_number_list_hint">点菜列表，可以进行退菜、催菜等操作</string>
+    <string name="order_detail_guide_number_start_use">开始使用</string>
+
+    <!--订单来源-->
+    <string name="order_from">订单来源  %s</string>
+    <string name="order_from_weixin">微信</string>
+    <string name="order_from_small_two">小二</string>
+    <string name="order_from_cash">二维火收银机</string>
+    <string name="order_from_waiter">服务生</string>
+    <string name="order_from_alipay">支付宝</string>
+    <string name="order_from_baidu_takeaway">百度外卖</string>
+    <string name="order_from_meituan_takeaway">美团外卖</string>
+    <string name="order_from_el_me">饿了么</string>
+    <string name="order_from_dian_me">点我吧</string>
+    <string name="order_from_kou_bei">口碑</string>
+    <string name="order_from_small_two_takeaway">小二外卖</string>
+    <string name="order_from_other">其他方式</string>
+    <string name="qq">QQ</string>
+    <string name="cash_money">现金</string>
+    <string name="cash_discount">在线优惠</string>
+    <string name="bank">银行卡</string>
+    <string name="vip_car">会员卡</string>
+    <string name="cloud_cash">二维火收银(手机版)</string>
+
+    <string name="sweep">扫一扫</string>
+    <string name="open_time">开单时间：%s</string>
+    <string name="qr_table_title">桌位二维码</string>
+    <string name="left_brackets">(</string>
+    <string name="right_brackets">)</string>
+    <string name="eating">就餐</string>
+    <string name="printed_account">客户联已打印</string>
+    <string name="eating_time_out">用餐已超时</string>
+    <string name="end_pay_time">结账时间：%s</string>
+
+    <string name="searching">搜索中</string>
+    <string name="login_success">登录成功</string>
+
+    <string name="server_no_more_data">没有更多数据了</string>
+
+    <string name="bind_shop_failure">绑定店铺失败，请稍后再试...</string>
+    <string name="no_bind_shop">您暂无工作店家，请到火掌柜添加</string>
+    <string name="no_more_data">暂无更多数据</string>
+    <string name="personal_center">个人中心</string>
+    <string name="no_order">暂无订单相关数据</string>
+    <string name="no_seat">暂无相关座位数据</string>
+    <string name="no_more_order">暂无更多订单相关数据</string>
+    <string name="not_find_seat">未搜索到相关桌位，请核对后输入</string>
+    <string name="not_find_order">未搜索到相关订单，请核对后输入</string>
+    <string name="get_qr_code_failure">获取二维码地址失败</string>
+    <string name="shop_code">店铺编码：</string>
+    <string name="check_out">收款</string>
+    <string name="check_out_success">结账成功</string>
+    <string name="reverser_check_out">反结账</string>
+    <string name="reverser_check_out_success">反结账成功</string>
+    <string name="after_end_pay">结账完毕</string>
+    <string name="after_end_pay_success">结账完毕成功</string>
+
+    <string name="opened_order">已开单</string>
+    <string name="eat_after_time_out">%1s分钟之后用餐超时</string>
+    <string name="minute">分钟</string>
+    <string name="No">No.</string>
+
+    <!--订单详情统计信息-->
+    <string name="total">合计</string>
+    <string name="individual">个</string>
+    <string name="risk">：</string>
+    <string name="comma">，</string>
+    <string name="add">加</string>
+    <string name="order_number">单号：</string>
+    <string name="order_numbers">单号</string>
+    <string name="seat_number">桌号：</string>
+    <string name="seat_numbers">桌号</string>
+    <string name="reverse_reason">反结账原因</string>
+    <string name="order_pay_order_number">交易单号：</string>
+    <string name="vip_number">会员卡号：</string>
+    <string name="in">于</string>
+    <string name="default_customer_name">顾客</string>
+    <string name="default_waiter_name">服务员</string>
+    <string name="payed">支付了</string>
+    <string name="slash">/</string>
+    <string name="loading_failure">加载失败</string>
+    <string name="reload">重新加载</string>
+    <string name="order_memo">客单备注：</string>
+
+    <!--Dialog文案提示-->
+    <string name="dialog_loging">登录中</string>
+    <string name="dialog_loading">加载中</string>
+    <string name="dialog_waiting">请稍等</string>
+    <string name="dialog_uploading">正在上传数据</string>
+    <string name="dialog_deleting">正在删除</string>
+    <string name="dialog_handling">正在处理</string>
+    <string name="dialog_sending">正在发送</string>
+
+    <!--订单-筛选-->
+    <string name="all">全部</string>
+    <string name="takeout">外卖单</string>
+    <string name="seat_order">桌位单</string>
+    <string name="retail_order">零售单</string>
+
+    <string name="please_seat_code">请扫描餐桌上的二维码</string>
+    <string name="please_qr_seat">请扫描桌位二维码</string>
+    <string name="scan_failure">扫描失败，请重新扫描！</string>
+    <string name="no_open_order">该桌尚未开单!</string>
+    <string name="qr_code_error">您扫描的二维码错误！</string>
+    <string name="toast_please_scan_seat">你扫描的二维码错误，请扫描桌位二维码</string>
+
+    <!--被踢下线-->
+    <string name="token_expired_logout_hint">您的账号在另一台设备登录,请重新登录</string>
+    <string name="token_exception_logout_hint">token异常,请重新登录</string>
+    <string name="message_type">消息\n分类</string>
+    <string name="show_type">展示\n方式</string>
+
+    <string name="request_title">去设置</string>
+    <string name="request_camera">请求添加相机权限</string>
+    <string name="request_camera_failure">相机权限请求失败，请重新请求！</string>
+    <string name="no_news">没有新消息</string>
+    <string name="qr_dialog_content">顾客使用二维火小二、微信、支付宝等应用扫描此二维码后，可以在手机开单、点菜、结账、呼叫服务员\n在“火掌柜”－“基础设置”－“桌位”可以下载桌位二维码</string>
+    <string name="qr_dialog_failure_title_error">当前二维码不可用\n\n请确保设备处于网络状态</string>
+    <string name="qr_refresh">点击刷新</string>
+    <string name="qr_loading">加载中...</string>
+
+    <string name="all_order">全部订单</string>
+    <string name="end_pay_order">已结账单</string>
+    <string name="no_end_pay_order">未结账单</string>
+
+    <string name="qr_find_order">扫码找单</string>
+    <string name="my_info">个人信息</string>
+    <string name="my_attention_seat">我关注的桌位或订单</string>
+    <string name="add_attention_seat_and_order">添加关注的桌位或订单</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="about_2d_fire">关于二维火</string>
+    <string name="modity_passowrd">修改密码</string>
+    <string name="message_detail">消息详情</string>
+
+    <string name="qr_find_instance">扫码点菜</string>
+    <string name="qr_change_seat">扫码改桌</string>
+    <string name="qr_open_seat">扫码选桌</string>
+    <string name="create_order">开单</string>
+    <string name="update_order">改单</string>
+    <string name="reversing">反结账中...</string>
+
+    <string name="chain_headquarters_prompt">连锁总部和分公司暂时无法使用二维火收银(手机版)</string>
+    <string name="change_shop">切换店家</string>
+    <string name="chain_manager_path">在“我的”-“我工作的店家”中，可以管理我工作的店家</string>
+    <string name="chain_manager_explanation">二维火收银(手机版)支持开单、点菜、结账、管理桌位、处理消息等功能，可配合二维火收银机一起使用。</string>
+
+    <string name="numbers">人数</string>
+    <string name="remark">备注</string>
+    <string name="nix">无</string>
+    <string name="temp_served">暂不上菜</string>
+    <string name="start_dishes">开始点菜</string>
+    <string name="input_remark">手动输入备注</string>
+    <string name="select_seat">选择桌位</string>
+
+    <!--推送相关文案-->
+    <string name="push_msgcenter_servicecall">服务铃</string>
+    <string name="push_msgcenter_pay">支付消息</string>
+    <string name="push_msgcenter_addfood">加菜消息</string>
+
+    <string name="select_seat_by_qr_scan">扫桌码选择座位</string>
+    <string name="select_seat_by_seat_list">从座位列表选择座位</string>
+
+    <string name="update_fee_plan">修改服务费</string>
+    <string name="cancel_instance">退菜</string>
+
+    <string name="instance_name">品名</string>
+    <string name="cancel_instance_number">退菜数量(%s)</string>
+    <string name="cancel_instance_weight">退菜重量(%s)</string>
+    <string name="cancel_instance_reason">退菜原因</string>
+    <string name="cancel_prompt">在“火掌柜”－“左侧栏”－“收银设置”－“特殊操作原因”可以进行管理</string>
+    <string name="ok_cancel_instance">确认退菜</string>
+    <string name="ok_cancel_order">确认撤单</string>
+
+    <string name="qr_seat_failure">获取桌位失败，请从新扫码二维码！</string>
+    <string name="origin_price">原单价(%s)</string>
+    <string name="new_price">新单价(%s)</string>
+
+    <string name="update_price">修改价格</string>
+    <string name="instance_price_not_null">商品单价不能为空！</string>
+    <string name="instance_price_must_greater_than_zero">商品单价必须大于0！</string>
+    <string name="instance_price_can_not_low_zero">商品单价不能小于0！</string>
+
+    <string name="updating">修改中...</string>
+    <string name="update_failure">更新失败！</string>
+    <string name="update_instance_price_success">修改商品单价成功</string>
+    <string name="update_instance_weight_success">修改商品重量成功</string>
+    <string name="update_weight">修改重量</string>
+    <string name="origin_weight">原重量(%s)</string>
+    <string name="new_weight">新重量(%s)</string>
+    <string name="instance_weight_not_null">请输入新重量</string>
+    <string name="instance_weight_must_greater_than_zero">商品重量必须大于0！</string>
+    <string name="instance_weight_can_not_low_zero">商品重量不能小于0！</string>
+
+    <string name="give_instance_number">赠送数量(%s)</string>
+    <string name="give_instance_weight">赠送重量(%s)</string>
+    <string name="give_instance_reason">赠送原因</string>
+    <string name="give_prompt">在“火掌柜”－“左侧栏”－“收银设置”－“特殊操作原因”可以进行管理</string>
+    <string name="ok_give_instance">确认赠菜</string>
+    <string name="give_ps">注：一旦赠送，将无法撤销此项赠菜操作，只能删除！</string>
+
+    <string name="give_instance">赠菜</string>
+    <string name="canceling_instance">退菜中...</string>
+    <string name="giving_instance">赠菜中...</string>
+    <string name="cancel_success">退菜成功</string>
+    <string name="give_success">赠菜成功</string>
+    <string name="push_instance">催菜</string>
+    <string name="push_instance_success">催菜成功</string>
+    <string name="pushed_instance">已催菜</string>
+    <string name="give_this_instance">赠送这个菜</string>
+    <string name="push_order_success">催单成功</string>
+    <string name="cancel_order_success">撤单成功</string>
+    <string name="number_not_null">人数不能为空！</string>
+    <string name="input_number_than_zero">输入内容必须大于0！</string>
+
+    <string name="print_order_dishes_order">打印点菜单</string>
+    <string name="print_order_account_order">打印客户联</string>
+    <string name="cancel_order">撤单</string>
+    <string name="push_order">催单</string>
+    <string name="order_op">操作</string>
+    <string name="add_instance">加菜</string>
+    <string name="cancel_order_reason">撤单原因</string>
+    <string name="canceling">撤单中</string>
+    <string name="change_order_success">改单成功</string>
+
+    <string name="print_order_dishes_order_success">打印点菜单成功</string>
+    <string name="print_order_account_order_success">打印客户联成功</string>
+    <string name="update_suit_instance">修改套餐</string>
+
+    <string name="prompt">提示</string>
+    <string name="open_seat_prompt">该桌已开单，您可以选择给该桌加菜，也可以选择更换桌号</string>
+    <string name="change_seat_number">更换桌号</string>
+    <string name="my_add_instance">我要加菜</string>
+    <string name="create_ordering">开单中</string>
+
+    <!--退菜数量-->
+    <string name="cancel_instance_num_is_not_null">退菜数量不能为空</string>
+    <string name="cancel_instance_num_big">退菜数量超过已点数量</string>
+    <string name="cancel_instance_weight_big">退菜重量超过已点重量</string>
+    <string name="cancel_instance_num_all">您要退菜的数量为全退，而结账数量没有全退</string>
+    <string name="cancel_instance_weight_all">您要退菜的结账数量为全退，而点菜数量没有全退</string>
+    <!--赠菜-->
+    <string name="give_instance_num_is_not_null">赠菜数量不能为空</string>
+    <string name="give_instance_num_big">赠菜数量超过已点数量</string>
+    <string name="give_instance_weight_big">赠菜重量超过已点重量</string>
+    <string name="give_instance_num_all">您要赠送的数量为全部，而赠送重量不是全部</string>
+    <string name="give_instance_weight_all">您要赠送的重量为全部，而赠送数量不是全部</string>
+
+    <string name="open_order_success">开单成功</string>
+    <string name="check_update_title">发现新版本</string>
+    <string name="wait">(待)</string>
+
+    <string name="print_account_prompt">客单内有商品没有确认重量，确定要继续此操作吗？</string>
+
+    <string name="cancel_instance_reason_prompt">您未设置退菜原因，请到火掌柜进行设置</string>
+    <string name="give_instance_reason_prompt">您未设置赠菜原因，请到火掌柜进行设置</string>
+    <string name="please_select_cancel_instance_reason_prompt">请选择退菜原因</string>
+    <string name="please_select_give_instance_reason_prompt">请选择赠菜原因</string>
+
+    <string name="cancel_order_reason_prompt">您未设置撤单原因，请到火掌柜进行设置</string>
+    <string name="please_cancel_order_reason_prompt">请选择撤单原因</string>
+
+    <!--云收银权限相关提示-->
+    <string name="permission_account_bill">您没有“账单”的权限，无法进行此操作！</string>
+    <string name="permission_give_instance">您没有“赠菜”权限，无法进行此操作！</string>
+    <string name="permission_cancel_instance">您没有“退菜”权限，无法进行此操作！</string>
+    <string name="permission_cancel_order">您没有“撤单”权限，无法进行此操作！</string>
+    <string name="permission_update_instance_price">您没有“修改价格”权限，无法进行此操作！</string>
+    <string name="permission_update_instance_weight">您没有“修改重量”权限，无法进行此操作！</string>
+    <string name="permission_change_order">您没有“改单”权限，无法进行此操作！</string>
+    <string name="permission_create_order">您没有“开单”权限，无法进行此操作！</string>
+    <string name="permission_end_pay">您没有“结账完毕”权限，无法进行此操作！</string>
+    <string name="permission_reverse_checkout">您没有“反结账”权限，无法进行此操作！</string>
+    <string name="permission_push_instance">您没有“催菜”权限，无法进行此操作！</string>
+    <string name="permission_print_account">您没有“打印客户联”权限，无法进行此操作！</string>
+    <string name="permission_print_dishes">您没有“打印点菜单”权限，无法进行此操作！</string>
+    <string name="permission_push_order">您没有“催单”权限，无法进行此操作！</string>
+    <string name="permission_menu_balance">您没有“沽清”权限，无法进行此操作！</string>
+    <string name="permission_update_fee">您没有“修改服务费”权限，无法进行此操作！</string>
+    <string name="permission_clear_discount">您没有“清空优惠”权限，无法进行此操作！</string>
+    <string name="permission_clear_pay">您没有“清空支付”权限，无法进行此操作！</string>
+    <string name="permission_clear_pay_by_electronic_payment">您没有“电子支付退款”权限，无法进行此操作！</string>
+    <string name="permission_checkout">您没有“收款”权限，无法进行此操作！</string>
+    <string name="permission_print_fin">您没有“打印财务联”权限，无法进行此操作！</string>
+    <string name="permission_no_bills">您没有“账单”权限，无法进行此操作！</string>
+
+    <string name="request_location">请求定位权限</string>
+    <string name="work_model_prompt">1.此开关关闭时，表示只使用二维火收银(手机版)。\n2.此开关打开时，表示二维火收银(手机版)和二维火收银机一起使用，此模式需要二维火收银机在V5.6.55版本以上。</string>
+    <string name="work_model_ps_prompt">注：请根据实际情况选择正确的工作模式，否则会导致二维火收银(手机版)或二维火收银机无法正常使用。</string>
+    <string name="started_local_cash">已在使用二维火收银机</string>
+    <string name="start_use_cloud">开始使用二维火收银(手机版)</string>
+    <string name="select_work_model">选择工作模式</string>
+    <string name="work_model_select">工作模式选择</string>
+    <string name="config_print">配置打印机</string>
+    <string name="phone_carryout_setting">电话外卖设置</string>
+
+    <string name="phone_carryout_setting_title">电话外卖设置</string>
+    <string name="phone_carryout_setting_label">手机来电后二维火收银机展示来电信息</string>
+    <string name="phone_carryout_setting_tip">打开此开关后，该手机有来电时，二维火收银机会展示来电信息</string>
+    <string name="phone_carryout_setting_warning">注：\n1.该设置内容和二维火收银(手机版)登陆用户绑定，请在接电话外卖的手机上安装二维火收银(手机版)并登陆此用户\n2.为了确保二维火收银机能够展示来电信息，请将二维火收银(手机版)加入白名单且处于打开状态</string>
+
+    <string name="dialog_content_phone_carryout_setting">手机号为%1$s的用户已打开此开关，您开启后会将其关闭，是否继续？</string>
+    <string name="dialog_negative_phone_carryout_setting">取消</string>
+    <string name="dialog_positive_phone_carryout_setting">确定开启</string>
+    <string name="update_carryout_phone_setting_failed">修改失败，稍后重试</string>
+
+    <string name="dialog_positive_phone_carryout_setting_close">确定关闭</string>
+    <string name="dialog_positive_phone_carryout_setting_close_tip">关闭此开关后，二维火收银机将无法展示来电信息，是否继续？</string>
+    <string name="dialog_negative_phone_carryout_setting_cancel">取消</string>
+
+
+    <string name="clear_discount_prompt">确定要删除该优惠吗？</string>
+    <string name="clear_pay_prompt">确定要删除该付款吗？</string>
+
+    <!--打印模块-->
+
+    <string name="config_print_prompt">配置打印点菜单、客户联、财务联等小票的打印机。</string>
+    <string name="test_print_page">打印测试页</string>
+    <string name="print_type">打印机类型</string>
+    <string name="set_bluetooth_print">设置蓝牙打印机</string>
+    <string name="print_ip">打印机IP</string>
+    <string name="print_byte_count">每行字符数</string>
+    <string name="please_select">请选择</string>
+    <string name="please_input_print_ip">请输入打印机IP</string>
+    <string name="print_ip_is_null">打印机IP未填写</string>
+    <string name="print_ip_is_not_ok">请输入正确的IP地址</string>
+    <string name="please_select_bluetooth_print">请选择蓝牙打印机</string>
+    <string name="please_set_print_byte_count">请设置打印字符数</string>
+    <!--配置打印机-->
+    <string name="net_printer">网口打印机</string>
+    <string name="blue_booth_printer">蓝牙打印机</string>
+    <string name="local_printer">本机打印</string>
+    <string name="set_print_byte_count">设置字符数</string>
+
+    <string name="must_people_add_prompt">您增加了用餐人数，必选商品数量也需要相应增加，请到购物车下单</string>
+    <string name="must_people_sub_prompt">你减少了用餐人数，必选商品数量不会自动减少，请手动进行退菜</string>
+    <string name="ratio_discount">%1$s折</string>
+
+    <string name="saving">保存中...</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_failure">保存失败</string>
+    <string name="working">工作中</string>
+
+    <!--手机区号-->
+    <string name="select_mobile_area">选择国家或地区</string>
+    <string name="mobile_area_default">中国</string>
+    <string name="mobile_area_number_default">+86</string>
+
+    <!--注册-->
+    <string name="register_2dfire">注册二维火账户</string>
+    <string name="verification_code">验证码</string>
+    <string name="hit_register_pass_word">密码：必须是6到20位字母或数字！</string>
+    <string name="hit_forget_pass_word">新密码：必须是6到20位字母或数字！</string>
+    <string name="register_prompt">提示：此处设置的手机号码和密码可用于登录二维火所有应用。</string>
+    <string name="register">注册</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="please_input_correct_phone">请输入正确的手机号码！</string>
+    <string name="please_input_sms_code">请输入6位短信验证码！</string>
+    <string name="please_input_correct_pass">密码必须是6-20位字母和数字的组合！</string>
+    <string name="rest_send">重新发送</string>
+    <string name="rest_send_format">重新发送(%d)</string>
+    <string name="forget_pass_word">忘记密码?</string>
+    <string name="forget_pass_word_title">忘记密码</string>
+    <string name="register_success">注册成功</string>
+    <string name="verification_code_sended">验证码已发送，请注意查收</string>
+    <string name="find_pass_word_success">修改密码成功</string>
+    <string name="start_work">开始上班</string>
+    <string name="end_work">下班啦</string>
+    <string name="personal_working">上班中</string>
+    <string name="personal_no_working">未上班</string>
+    <string name="end_work_success">工作辛苦了，下班成功</string>
+    <string name="goto_work_success">上班成功</string>
+    <string name="ok_end_work">确定下班</string>
+    <string name="end_work_dialog_content">下班后不能处理订单，不接收顾客消息。确定要下班吗？</string>
+    <string name="goto_work_dialog_content">您处于下班状态，不能处理订单，不能接受顾客消息，确认上班？</string>
+    <string name="get_work_status_failure">获取工作状态失败，请点击重试</string>
+    <string name="retry">重试</string>
+    <string name="off_work_label">(已下班)</string>
+    <string name="open_car_prompt">该桌已开单，您可以选择给该桌加菜，也可以取消，更换其他桌位开桌</string>
+    <string name="work_model_use_local_cash_prompt">打开此开关，如果二维火收银机已经登录，请重新进行店家登录，否则将无法获取到此前在二维火收银(手机版)上处理的订单，会导致数据不一致。</string>
+
+    <string name="prompt_no_after_end_pay_retail">未结账完毕的零售单数量已经超过50单，请尽快处理。</string>
+    <string name="prompt_no_after_end_pay_retail_more_100">未结账完毕的零售单数量已经超过100单，无法开零售单。</string>
+    <string name="go_deal_with">去处理</string>
+    <string name="prompt_no_watched_retail">您尚未关注零售单，无法处理，在“我关注的桌位”页面可以进行关注</string>
+
+    <string name="short_cut_receipt">快捷收款</string>
+    <string name="short_cut_receipt_fee">金额</string>
+    <string name="short_cut_receipt_go">去收款</string>
+    <string name="main_tab">主页</string>
+
+    <string name="home_open_order">开单</string>
+
+    <string name="shortcut_receipt_actual_receive_error_alert">收款金额必须大于0</string>
+    <string name="shortcut_receipt_actual_receive_exceed_error_alert">收款金额不能大于100万</string>
+    <string name="change_work_shop">切换店家</string>
+
+    <string name="config_small_ticket_printer">配置小票打印机</string>
+    <string name="config_label_ticket_printer">配置标签打印机</string>
+    <string name="pos_setting">POS收款设置</string>
+    <string name="use_label_print">使用标签打印机</string>
+    <string name="label_paper_type">标签纸型号</string>
+    <string name="label_paper_type_prompt">您已经在二维火掌柜-收银单据模版中对标签纸型号进行过配置，如需更改请到火掌柜上操作。</string>
+    <string name="label_config_prompt">配置打印用于粘贴的标签纸，适用于奶茶店、零食等。若使用网口打印机，则网口打印机与二维火收银(手机版)必须在同一个局域网内。</string>
+    <string name="label_paper_width_or_height">宽%1$smm，高%2$smm</string>
+    <string name="reprint_label_paper">补打标签纸</string>
+    <string name="shop_role_name">职级：%1$s</string>
+    <string name="save_label_switch_failure">保存标签打印机开关失败</string>
+
+    <string name="immediately_create_shop">立即开店</string>
+    <string name="no_working_shop">没有正在工作的店家</string>
+    <string name="no_working_shop_prompt">如果您是店里的员工，请联系掌柜到\"二维火掌柜\"—\"员工管理\"创建员工并绑定您的手机；若已绑定，请刷新页面或退出后重新登录。"</string>
+
+    <string name="home_takeout">在线外卖</string>
+    <string name="home_takeout_num">笔外卖单</string>
+    <string name="home_hangup_order">挂起订单</string>
+    <string name="home_takeout_pending_delivery">待配送</string>
+    <string name="home_electronic_cash_detail">电子收款明细</string>
+    <string name="home_electronic_cash_detail_voucher">收款凭证</string>
+    <string name="home_electronic_detail_vip">会员</string>
+    <string name="home_electronic_detail_order_id">单号</string>
+    <string name="home_electronic_detail_seat_code">桌号</string>
+    <string name="home_electronic_detail_order_code">交易单号</string>
+    <string name="home_electronic_detail_order_code_vip">会员卡号</string>
+    <string name="home_electronic_detail_pay_time">支付时间</string>
+    <string name="home_electronic_detail_refund">退款</string>
+    <string name="home_electronic_detail_refund_alert">电子支付退款后该付款将原路退还给顾客，确定退款吗？</string>
+    <string name="takeout_detail_good_name_label">商品</string>
+    <string name="takeout_detail_pay_label">支付明细</string>
+
+    <string name="hang_up_order">挂起订单</string>
+    <string name="hang_up_order_prompt">此处展示最近2小时的挂起订单</string>
+    <string name="hand_up_need_pay_money">应收金额：</string>
+    <string name="hand_up_time">挂单时间：%s</string>
+    <string name="hand_up_people">挂单人：%s</string>
+
+    <string name="electronic_receipt_name">%1$s:</string>
+    <string name="electronic_receipt_order_code">No.%1$s</string>
+    <string name="electronic_receipt_pay_success">收款成功</string>
+    <string name="electronic_receipt_refund_success">退款成功</string>
+    <string name="electronic_receipt_pay_time">收款时间</string>
+    <string name="electronic_receipt_refund_time">退款时间</string>
+    <string name="electronic_receipt_list_hint">此处展示最近24小时的电子收款</string>
+    <string name="electronic_list_empty">1、电子收款明细中展示24小时内微信、支付宝、QQ等收款明细。\n2、如果您的店未开通二维火代收服务，这里将不展示收款明细。</string>
+    <string name="takeout_msg_detail_remark">备注:%1s</string>
+    <string name="takeout_msg_pay_detail_outfee">(含配送费: %1s)</string>
+    <string name="takeout_msg_pay_detail_receiver">收货人:</string>
+    <string name="takeout_msg_pay_detail_reject_alert">拒绝接单后，订单的收款金额将原路退回，确定要拒绝接单吗？</string>
+    <string name="takeout_msg_pay_detail_subscribe">预约外卖</string>
+
+    <string name="receive_name_and_phone">收货人：%1$s（%2$s）</string>
+    <string name="receive_distribution_way">配送方式：%1s</string>
+    <string name="customer_request_time">顾客要求送达时间</string>
+    <string name="customer_invite_time">顾客自取时间</string>
+    <string name="empty_hang_order">暂无挂起订单</string>
+    <string name="send_goods_to_door">送货上门</string>
+    <string name="goto_shop_get">到店自取</string>
+
+    <string name="shopkeeper">二维火掌柜</string>
+    <string name="at_once_install">立即安装</string>
+    <string name="shopkeeper_install_prompt">您未安装二维火掌柜，是否立即安装？</string>
+    <string name="distribution_fee">配送费</string>
+    <string name="shop_employ_0">当前店铺为试用版，</string>
+    <string name="shop_employ_1">%1$d</string>
+    <string name="shop_employ_2">天后试用结束</string>
+    <string name="shop_employ_end">店铺试用已结束</string>
+    <string name="shop_update_official">升级为正式版</string>
+    <string name="shop_employ_end_content">店铺试用已结束，需要升级到正式版后才能继续使用</string>
+    <string name="at_once_upgrade">立即升级</string>
+
+    <!--零售 START-->
+    <string name="retail_short_cut_receipt">快速收款</string>
+    <string name="retail_home_takeout">线上订单</string>
+    <string name="retail_home_takeout_num">笔线上订单</string>
+    <string name="retail_receive_takeout_msg">接收线上订单消息</string>
+    <string name="retail_order_list_search_hit">请输入订单流水号或单号</string>
+    <string name="retail_serial_code">流水号：%s</string>
+    <string name="retail_order_serial_number">订单流水号</string>
+    <string name="retail_serial_number">订单流水号：%s</string>
+    <string name="retail_order_money">金额：</string>
+    <string name="retail_order_from">来源：%s</string>
+    <string name="retail_order_detail">账单</string>
+    <string name="retail_cashier">收银员：%s</string>
+    <string name="retail_item">件</string>
+    <string name="print_small_ticket">小票打印</string>
+    <string name="retail_msg_msgcenter_result_all_handled_hint">确定将不需要审核的新消息标记为已处理（共%1$d条）？</string>
+    <string name="retail_takeout_msg_pay_detail_subscribe">预约</string>
+    <string name="empty_open_order">暂无订单</string>
+    <string name="retail_order_from_wei_shop">微店</string>
+    <string name="retail_order_from_baidu_takeaway">百度</string>
+    <string name="retail_order_from_meituan_takeaway">美团</string>
+    <string name="retail_no_barcode_label">—</string>
+    <string name="retail_permission_print_account">您没有“补打小票”的权限，无法进行此操作！</string>
+    <string name="retail_permission_order_begin">您没有“开单收款”的权限，无法进行此操作！</string>
+    <string name="retail_permission_billaccount">您没有“账单”的权限，无法进行此操作！</string>
+    <string name="retail_label">零售</string>
+    <string name="catering_label">餐饮</string>
+    <string name="retail_takeout_msg_pay_detail_receiver">提货人：</string>
+    <string name="retail_customer_request_time">顾客要求送达时间：</string>
+    <string name="retail_customer_invite_time">顾客自提时间：</string>
+    <string name="retail_receive_name_and_phone">提货人：%1$s（%2$s）</string>
+    <string name="retail_goto_shop_get">到店自提</string>
+    <string name="retail_cloud_cash">云收银</string>
+    <!--零售 END-->
+
+    <string name="print_finance_order">打印财务联</string>
+    <string name="usb_print">USB打印机</string>
+    <string name="pass_local_cash_print">通过主收银打印</string>
+    <string name="use_local_cash_print_prompt">适用于网口打印机与主收银在同一个局域网，与云收银不在同一个局域网的场景。</string>
+    <string name="use_local_cash_print_usb">通过主收银连接的USB打印机打印小票</string>
+    <string name="seat_must_be_not_null">桌号不能为空</string>
+    <string name="order_inner_code">流水号：%1$s</string>
+
+    <!--环境切换-->
+    <string name="env_title">Api Env</string>
+    <string name="at_once_change">立即切换</string>
+
+    <!--微信登录绑定手机号-->
+    <string name="wc_set_phone">设置手机号码</string>
+    <string name="wc_bind_phone">绑定</string>
+    <string name="hint_register_and_bind">此手机号码没有注册，在设置密码后完成注册并绑定。</string>
+    <string name="hint_registered_and_cannot_bind">此手机号已经在二维火小二上注册过，如需绑定微信，会涉及到二维火账户的会员资金数据，请使用二维火小二进行操作。</string>
+    <string name="wechat_login">微信登录</string>
+    <string name="wechat_uninstalled_hint">您未安装微信，是否立即安装？</string>
+    <string name="verify_code_login">验证码登录</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="unknown">未知</string>
+    <string name="hint_verify_code_login_but_unregister">此手机号码没有注册，在设置密码后完成注册。</string>
+    <string name="set_password">设置密码</string>
+    <string name="register_and_login">注册并登录</string>
+    <string name="attention_desk">关注的桌位</string>
+    <string name="project_env">项目环境</string>
+    <string name="load_more_hint">加载更多新消息</string>
+    <string name="pay_info">支付信息</string>
+    <string name="find_order">找单</string>
+    <string name="end_account">结账</string>
+    <string name="back_end_account">反结账</string>
+    <string name="success_end_account">结账完毕</string>
+    <string name="cloudcash_running">二维火收银正在运行中</string>
+    <string name="left">剩余</string>
+    <string name="bluetooth_adapter_success">蓝牙打印机适配成功，请按返回键回到二维火收银</string>
+    <string name="bluetooth_not_support">暂不支持该蓝牙设备</string>
+    <string name="must_input">必填</string>
+    <string name="msg_center_unknown_type_title">消息类型（%1$d）</string>
+    <string name="msg_center_unknown_type_content">当前版本不支持该消息类型，请升级到最新版本</string>
+    <string name="notification_default_msg">您有新消息</string>
+    <string name="order_find_create_order">开单</string>
+
+    <!--网络检测-->
+    <string name="network_delay">网络延迟</string>
+    <string name="start_detecting">开始检测</string>
+    <string name="detecting">检测中</string>
+    <string name="network_value">--</string>
+    <string name="network_ms">ms</string>
+    <string name="network_excellent">优</string>
+    <string name="network_good">良</string>
+    <string name="network_poor">差</string>
+    <string name="network_no">无网络</string>
+    <string name="device_name">设备名称</string>
+    <string name="android_version">Android版本</string>
+    <string name="device_type">设备型号</string>
+    <string name="device_resolution">分辨率</string>
+</resources>

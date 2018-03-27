@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f5"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/padding_small">
+
+    <View
+        android:id="@+id/view_divider"
+        style="@style/DividerStyle" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_divider"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/module_menu_cartdetail_food_weight"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/text_size_normal" />
+
+    <com.zmsoft.ccd.lib.widget.EditFoodNumberView
+        android:id="@+id/edit_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view_divider"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:module_menu_middle_max_value="10000"
+        app:module_menu_middle_min_value="0"
+        app:module_menu_middle_text_color="@color/common_blue"
+        app:module_menu_middle_text_size="@dimen/text_size_normal"
+        app:module_menu_unit="@string/module_menu_food_unit" />
+
+
+</RelativeLayout>

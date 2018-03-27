@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DropDownTab">
+        <attr name="tabBackgroundColor" format="color" />
+        <attr name="tabUnderlineColor" format="color" />
+        <attr name="tabUnderlineHeight" format="dimension" />
+        <attr name="tabDividerColor" format="color" />
+        <attr name="tabDividerWidth" format="dimension" />
+        <attr name="tabDividerHeight" format="dimension" />
+        <attr name="tabTextSize" format="dimension" />
+        <attr name="tabTextSelectedColor" format="color" />
+        <attr name="tabTextUnselectedColor" format="color" />
+        <attr name="tabSelectedIcon" format="reference" />
+        <attr name="tabUnselectedIcon" format="reference" />
+        <attr name="tabIconPadding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="DropDownMenu">
+        <attr name="dropDownMenuMaskColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchInputWidget">
+        <attr name="search_hint" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CcdSettingItemView">
+        <attr name="siv_title" format="string" />
+        <attr name="siv_icon" format="reference" />
+        <attr name="siv_explain" format="string" />
+        <attr name="type">
+            <flag name="text" value="1" />
+            <flag name="edit_text" value="2" />
+            <flag name="checkbox" value="3" />
+            <flag name="spinner" value="4" />
+        </attr>
+        <attr name="siv_text_color" format="color" />
+        <attr name="siv_hint_text" format="string" />
+        <attr name="siv_hint_text_color" format="color" />
+        <attr name="siv_check_box_button" format="reference" />
+        <attr name="siv_isSub" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+</resources>

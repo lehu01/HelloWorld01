@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="#eaf0f6"
+        android:paddingBottom="9dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/text_takeout_order_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:gravity="center_horizontal"
+            android:textColor="#333333"
+            android:textSize="11sp"
+            tools:drawableTop="@drawable/ic_order_from_meituan"
+            tools:text="美团-999" />
+
+        <TextView
+            android:id="@+id/text_takeout_order_delivery_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_takeout_order_original"
+            android:includeFontPadding="false"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="到店自取" />
+
+        <TextView
+            android:id="@+id/text_takeout_order_appointment_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/text_takeout_order_delivery_way"
+            android:layout_marginLeft="4.5dp"
+            android:layout_toRightOf="@id/text_takeout_order_delivery_way"
+            android:background="@drawable/module_takeout_shape_takeout_appointment_flag"
+            android:paddingBottom="1dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="1dp"
+            android:text="@string/module_takeout_reserve_flag"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/text_takeout_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:includeFontPadding="false"
+            android:textColor="#e02200"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="待自取" />
+
+        <TextView
+            android:id="@+id/text_takeout_order_take_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/text_takeout_order_delivery_way"
+            android:layout_alignBottom="@id/text_takeout_order_original"
+            android:layout_marginTop="-4dp"
+            android:lineSpacingExtra="0sp"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            tools:text="顾客自取时间：今日 17:30" />
+
+        <TextView
+            android:id="@+id/text_takeout_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_takeout_order_take_time"
+            android:layout_alignParentRight="true"
+            android:textColor="#5599ff"
+            android:textSize="10sp"
+            tools:text="No.28" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_takeout_order_person_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/module_takeout_ic_order_phone"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        tools:text="取餐人：王先生(1590009999)" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp">
+
+
+        <TextView
+            android:id="@+id/text_takeout_order_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/module_takeout_ic_order_address"
+            android:gravity="center_vertical"
+            android:textColor="#7d7d7d"
+            android:textSize="12sp"
+            tools:text="3.6km" />
+
+        <TextView
+            android:id="@+id/text_takeout_order_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_takeout_order_distance"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/text_takeout_order_distance"
+            android:gravity="left|center_vertical"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            tools:text="杭州市拱墅区教工路552号2楼888室" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="15dp">
+
+        <View style="@style/Module_Takeout_Divider" />
+
+        <TextView
+            android:id="@+id/text_takeout_order_detail_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/module_takeout_detail_toggle"
+            android:textColor="#5599ff"
+            android:textSize="12sp"
+            tools:drawableRight="@drawable/module_takeout_ic_order_detail_fold" />
+
+        <TextView
+            android:id="@+id/text_takeout_order_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/module_takeout_shape_takeout_order_menu_red"
+            android:gravity="center"
+            android:textColor="#e02200"
+            android:textSize="12sp"
+            tools:text="@string/module_takeout_order_self_took" />
+
+        <TextView
+            android:id="@+id/text_takeout_order_repeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/text_takeout_order_next"
+            android:background="@drawable/module_takeout_shape_takeout_order_menu_gray"
+            android:gravity="center"
+            android:text="@string/module_takeout_order_revoke"
+            android:textColor="#4d4d4d"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_takeout_order_print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/text_takeout_order_repeal"
+            android:background="@drawable/module_takeout_shape_takeout_order_menu_gray"
+            android:gravity="center"
+            android:text="@string/module_takeout_order_print"
+            android:textColor="#4d4d4d"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

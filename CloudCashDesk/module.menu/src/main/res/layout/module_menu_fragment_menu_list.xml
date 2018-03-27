@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/module_menu_list_bottom_padding" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_cart_count"
+        android:layout_width="61dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="14dp">
+
+        <TextView
+            android:id="@+id/text_cart"
+            android:layout_width="@dimen/module_menu_list_bottom_cart_size"
+            android:layout_height="@dimen/module_menu_list_bottom_cart_size"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_circle_red_with_white_stroke"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/module_menu_cart_white"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="@string/module_menu_list_bottom_cart"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/text_cart_other_order"
+            android:layout_width="28dp"
+            android:layout_height="15dp"
+            android:background="@drawable/module_menu_shape_blue_other_order"
+            android:gravity="center"
+            android:maxLength="2"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/text_cart_my_order"
+            android:layout_width="28dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/module_menu_shape_red_my_order"
+            android:gravity="center"
+            android:maxLength="2"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zmsoft.ccd.lib.widget.couponview.RelativeLayoutCouponView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0.5dp"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/padding_medium"
+    android:paddingRight="@dimen/padding_medium"
+    app:cv_semicircle_color="@color/cv_semicircle_color"
+    app:cv_semicircle_gap="@dimen/cv_semicircle_gap"
+    app:cv_semicircle_radius="@dimen/cv_semicircle_radius">
+
+    <ImageView
+        android:id="@+id/image_user_icon"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/text_user_nice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_micro"
+        android:layout_toRightOf="@+id/image_user_icon"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_size_small"/>
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/DividerStyle"
+        android:layout_below="@id/image_user_icon"
+        android:layout_marginBottom="5dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/image_user_icon"
+        android:layout_marginBottom="5dp"/>
+
+</com.zmsoft.ccd.lib.widget.couponview.RelativeLayoutCouponView>

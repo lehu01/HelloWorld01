@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/common_front_gery">
+    <item android:drawable="@drawable/shape_white_bg" />
+</ripple><!--水波纹按钮背景-->

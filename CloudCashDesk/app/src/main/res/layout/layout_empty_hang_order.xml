@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zmsoft.ccd.lib.widget.emptylayout.CustomEmptyLayout android:id="@+id/layout_empty"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:button_visiable="false"
+    app:image_logo="@drawable/icon_no_hang_order"
+    app:text_desc="@string/empty_hang_order" />

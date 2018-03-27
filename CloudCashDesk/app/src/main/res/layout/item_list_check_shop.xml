@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0.5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor70"
+        android:padding="@dimen/margin_content">
+
+        <ImageView
+            android:id="@+id/image_shop_icon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_shop_default"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/text_working"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape_bg_round_person_center_on_work"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/padding_micro"
+            android:paddingRight="@dimen/padding_micro"
+            android:paddingTop="3dp"
+            android:text="@string/working"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:id="@+id/linear_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_toLeftOf="@id/text_working"
+            android:layout_toRightOf="@id/image_shop_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <TextView
+                android:id="@+id/text_shop_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/text_shop_role_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

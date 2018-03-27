@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout_order_summary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar_normal"
+                layout="@layout/layout_toobar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/fragment_drawer"
+            class="com.zmsoft.ccd.module.main.order.summary.filter.OrderSummaryFilterFragment"
+            android:layout_width="@dimen/order_summary_right_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="end" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <TextView
+        android:id="@+id/text_order_summary_toggle_drawer"
+        android:layout_width="33dp"
+        android:layout_height="57dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_slide_bar"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/filter"
+        android:textColor="#333333"
+        android:textSize="10sp"
+        android:visibility="gone" />
+</RelativeLayout>

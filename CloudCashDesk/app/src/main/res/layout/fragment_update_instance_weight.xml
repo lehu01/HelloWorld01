@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/instance_name"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/text_instance_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_normal"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin_content"
+            android:layout_marginRight="@dimen/margin_content"
+            android:background="@color/default_divide"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_content">
+
+            <TextView
+                android:id="@+id/text_instance_origin_weight_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/origin_weight"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/text_instance_origin_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_normal"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin_content"
+            android:layout_marginRight="@dimen/margin_content"
+            android:background="@color/default_divide"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_marginLeft="@dimen/padding_content"
+                android:id="@+id/text_instance_new_weight_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/new_weight"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/text_size_normal"/>
+
+
+            <com.zmsoft.ccd.lib.widget.EditFoodNumberView
+                android:id="@+id/edit_instance_new_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                app:module_menu_middle_hint_color="@color/module_menu_number_hint"
+                app:module_menu_middle_hint_text="@string/module_menu_input_require"
+                app:module_menu_middle_max_value="10000"
+                app:module_menu_middle_min_value="0"
+                app:module_menu_middle_text_color="@color/common_blue"
+                app:module_menu_middle_text_size="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin_content"
+            android:layout_marginRight="@dimen/margin_content"
+            android:background="@color/default_divide"/>
+
+    </LinearLayout>
+
+</LinearLayout>

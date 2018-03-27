@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中时 -->
+
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/accentColor" />
+                </shape>
+            </item>
+            <item android:bottom="2dp">
+                <shape>
+                    <solid android:color="@color/primaryColor" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <!-- 选中时 -->
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/accentColor" />
+                </shape>
+            </item>
+            <item android:bottom="2dp">
+                <shape>
+                    <solid android:color="@color/primaryColor" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <!-- 按下时 -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/accentColor" />
+                </shape>
+            </item>
+            <item android:bottom="2dp">
+                <shape>
+                    <solid android:color="@color/primaryColor" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/primaryColor" />
+        </shape>
+    </item>
+
+</selector>

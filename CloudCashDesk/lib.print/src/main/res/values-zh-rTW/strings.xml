@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">lib.print</string>
+    <string name="printer_send_error">發送打印失敗,請確認檢查紙張、IP是否正確或者網絡是否正常</string>
+    <string name="printer_bluetooth_send_error">發送打印失敗,請確認檢查紙張、藍牙是否正常連接</string>
+    <string name="bluetooth_send_failure">藍牙發送信息失敗</string>
+    <string name="please_set_bluetooth">請進行藍牙配對後再進行打印</string>
+    <string name="please_set_printer">打印機未配置，請先配置打印機</string>
+    <string name="not_prompt">不再提示</string>
+    <string name="blue_tooth_close">請檢查藍牙是否已關閉或沒有藍牙連接</string>
+
+    <!--打印相關提示-->
+    <string name="empty_load_file_path">下載文件地址為空</string>
+    <string name="empty_print_file_path">打印文件為空</string>
+    <string name="empty_print_data">打印數據源data為空</string>
+    <string name="empty_print_type">缺少參數type</string>
+
+    <string name="fail_print_download_print_file">打印失敗：下載打印文件失敗，</string>
+    <string name="fail_print_get_the_path_of_order_summary">打印失敗：獲取打印賬單匯總文件下載地址失敗，</string>
+    <string name="fail_print_get_the_path_of_customer_receipt">打印失敗：獲取打印“客戶聯”文件下載地址失敗，</string>
+    <string name="fail_print_get_the_path_of_add_menu">打印失敗：獲取打印“加菜單”文件下載地址失敗，</string>
+    <string name="fail_print_get_the_path_of_file">打印失敗：獲取打印文件下載地址失敗，</string>
+    <string name="fail_print_create_file">打印失敗：創建文件失敗</string>
+    <string name="fail_print_download_file">打印失敗：下載文件失敗</string>
+    <string name="fail_print_get_the_path_of_replenish_label_paper">打印失敗：獲取打印“補打標簽紙”文件下載地址失敗，</string>
+    <string name="fail_print_get_the_path_of_label_dish_list">打印失敗：獲取打印“標簽菜肴列表”文件下載地址失敗，</string>
+</resources>

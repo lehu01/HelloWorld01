@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="module_menu_colorPrimary">#3F51B5</color>
+    <color name="module_menu_colorPrimaryDark">#303F9F</color>
+    <color name="module_menu_colorAccent">#FF4081</color>
+
+
+    <color name="module_menu_price_red">#E02200</color>
+    <color name="module_menu_black">#ff333333</color>
+    <color name="module_menu_food_speciality">#FF666666</color>
+
+    <color name="module_menu_item_bg_color">#FFFFFF</color>
+    <color name="module_menu_item_retail_bg_color">#CCFFFFFF</color>
+    <color name="module_menu_border_cart_edit">#FFD7D7D7</color>
+    <color name="module_menu_blue">#006FCE</color>
+
+    <color name="module_menu_list_divider">#d7d7d7</color>
+    <color name="module_menu_retail_list_divider">#c6c6c6</color>
+    <color name="module_menu_ripple">#dcdcdc</color>
+    <color name="module_menu_press">#000000</color>
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toos="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_small">
+
+    <CheckBox
+        android:id="@+id/checkbox_scope"
+        style="@style/CustomCheckAllCheckBox"
+        android:layout_width="@dimen/width_attention_checkbox"
+        android:layout_height="@dimen/width_attention_checkbox"
+        android:layout_gravity="start|center_vertical" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_micro"
+        android:layout_marginStart="@dimen/margin_micro"
+        android:gravity="center_vertical"
+        android:textColor="@color/tertiaryTextColor"
+        android:textSize="@dimen/text_size_normal"
+        toos:text="选择其他待配送订单（3）" />
+
+
+</LinearLayout>

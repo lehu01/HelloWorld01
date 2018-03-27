@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                tools:openDrawer="end">
+    <!--预留出来的view，由于做了状态栏全透明效果，会导致toolbar上移，上移的高度是状态栏高度（25dp），所以在此预留一个25dp的view，用作上移时的缓冲-->
+    <!--<View-->
+        <!--android:id="@+id/view_transparent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/toolbar_padding_top"-->
+        <!--android:background="@android:color/transparent"/>-->
+    <!--头部toolbar-->
+    <include
+        android:id="@+id/toolbar_normal"
+        layout="@layout/layout_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--底部tab-->
+    <include
+        android:id="@+id/tab_bottom"
+        layout="@layout/layout_main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_bottom"
+        android:layout_below="@id/toolbar_normal"
+        android:orientation="vertical">
+        <!--内容-->
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+    </LinearLayout>
+
+</RelativeLayout>

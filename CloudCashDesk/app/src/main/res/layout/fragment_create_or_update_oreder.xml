@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:orientation="vertical">
+
+        <!--桌号-->
+        <RelativeLayout
+            android:id="@+id/relative_select_seat_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_normal"
+            android:padding="@dimen/margin_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/seat_numbers"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_seat_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/image_clear"-->
+                <!--android:layout_width="16dp"-->
+                <!--android:layout_height="16dp"-->
+                <!--android:layout_marginLeft="2dp"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/ic_delete" />-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_item_right" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin_content"
+            android:layout_marginRight="@dimen/margin_content"
+            android:background="@color/default_divide" />
+
+        <!--人数-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/text_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_content"
+                android:text="@string/numbers"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <EditText
+                android:id="@+id/edit_order_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margin_content"
+                android:layout_toRightOf="@id/text_number"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/mast_fill"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingRight="@dimen/margin_content"
+                android:textColor="@color/common_blue"
+                android:textColorHint="@color/red"
+                android:textSize="@dimen/text_size_normal" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin_content"
+            android:layout_marginRight="@dimen/margin_content"
+            android:background="@color/default_divide" />
+
+        <!--备注-->
+        <RelativeLayout
+            android:id="@+id/relative_select_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_normal"
+            android:padding="@dimen/margin_content">
+
+            <TextView
+                android:id="@+id/text_remark_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/remark"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/text_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_micro"
+                android:layout_toRightOf="@id/text_remark_display"
+                android:drawableRight="@drawable/icon_item_right"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/common_blue"
+                android:textSize="@dimen/text_size_normal"
+                android:textCursorDrawable="@drawable/edit_cursor_color"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin_content"
+            android:layout_marginRight="@dimen/margin_content"
+            android:background="@color/default_divide" />
+
+        <!--暂不上菜-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/margin_content"
+            android:paddingRight="@dimen/margin_content"
+            android:paddingTop="@dimen/margin_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/temp_served"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_temp_served"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:checked="false" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_ok"
+        style="@style/NormalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_content"
+        android:layout_marginRight="@dimen/margin_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textSize="@dimen/text_size_normal" />
+
+</LinearLayout>

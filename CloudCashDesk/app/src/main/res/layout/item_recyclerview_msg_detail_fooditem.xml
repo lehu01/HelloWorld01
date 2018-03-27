@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zmsoft.ccd.lib.widget.couponview.LinearLayoutCouponView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_item_bg"
+    android:orientation="vertical"
+    app:cv_semicircle_color="@color/cv_semicircle_color"
+    app:cv_semicircle_gap="@dimen/cv_semicircle_gap"
+    app:cv_semicircle_radius="@dimen/cv_semicircle_radius">
+
+    <View
+        android:id="@+id/view_divider"
+        style="@style/DividerStyle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+            android:id="@+id/text_foodname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/text_food_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_foodname"
+            android:textColor="@color/tertiaryTextColor"
+            android:textSize="@dimen/text_size_small" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_food_remark"
+            android:layout_marginTop="@dimen/margin_small">
+
+            <TextView
+                android:id="@+id/text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/accentColor"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/text_foodnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/tertiaryTextColor"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_instance_rejected"
+            android:visibility="gone" />
+    </RelativeLayout>
+</com.zmsoft.ccd.lib.widget.couponview.LinearLayoutCouponView>

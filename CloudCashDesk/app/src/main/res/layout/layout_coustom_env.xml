@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_input_env"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/shape_edit_transparent"
+        android:drawablePadding="@dimen/margin_small"
+        android:hint="请先选择自定义环境 ，在输入env"
+        android:inputType="text"
+        android:paddingLeft="@dimen/padding_content"
+        android:singleLine="true"
+        android:textColor="@color/tertiaryTextColor"
+        android:textSize="@dimen/text_size_normal"
+        android:textCursorDrawable="@drawable/edit_cursor_color"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_env"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" />
+
+</LinearLayout>

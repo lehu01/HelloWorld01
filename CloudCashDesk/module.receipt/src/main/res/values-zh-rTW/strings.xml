@@ -1,0 +1,111 @@
+<resources>
+    <string name="module_receipt_app_name">收款</string>
+
+    <!--收款-->
+    <string name="module_receipt_receipt">收款</string>
+    <string name="module_receipt_consumption_money">消費金額</string>
+    <string name="module_receipt_offers_money">優惠金額</string>
+    <string name="module_receipt_origin_least_amount">最低消費</string>
+    <string name="module_receipt_service_money">服務費</string>
+    <string name="module_receipt_receivable_money">應收金額</string>
+    <string name="module_receipt_received_money">已收金額</string>
+    <string name="module_receipt_receiveable">應收</string>
+    <string name="module_receipt_actual">實收</string>
+    <string name="module_receipt_actual_received_money">實收金額</string>
+    <string name="module_receipt_need_pay">還需收款</string>
+    <string name="module_receipt_discount">打折優惠</string>
+    <string name="module_receipt_whole_order_discount">整單打折</string>
+    <string name="module_receipt_verification">核銷優惠券</string>
+    <string name="module_receipt_discount_rate">折扣率</string>
+    <string name="module_receipt_discount_rate_unit">%</string>
+    <string name="module_receipt_discount_reason">打折原因</string>
+    <string name="module_receipt_discount_switch">對設置不允許打折的商品也打折</string>
+    <string name="module_receipt_method">收款方式</string>
+    <string name="module_receipt_clear_discount_alert">確定要清空優惠嗎？</string>
+    <string name="module_receipt_clear_discount">清空優惠</string>
+    <string name="module_receipt_discount_rate_error_alert">折扣必須大於0</string>
+    <string name="module_receipt_discount_select_reason_error_alert">必須選擇打折原因</string>
+    <string name="module_receipt_discount_empty_reason_error_alert">您未設置打折原因，請到火掌櫃進行設置</string>
+    <string name="module_receipt_onaccount">掛賬</string>
+    <string name="module_receipt_onaccount_unit">選擇掛賬單位(人)</string>
+    <string name="module_receipt_coupon_num">代金券數量</string>
+    <string name="module_receipt_coupon_fee">代金券面額</string>
+    <string name="module_receipt_coupon_num_error_alert">代金券數量必須大於0</string>
+    <string name="module_receipt_actual_receive_error_alert">實收金額必須大於0</string>
+    <string name="module_receipt_free_charge_reason">免單原因</string>
+    <string name="module_receipt_free_charge">免單</string>
+    <string name="module_receipt_free_charge_input_hint">手動輸入</string>
+    <string name="module_receipt_change">找零</string>
+    <string name="module_receipt_coupon_empty_title">沒有該代金券的面額</string>
+    <string name="module_receipt_coupon_empty_subcontent">請到「火掌櫃」-「付款方式」進行添加</string>
+    <string name="module_receipt_unit_empty_title">沒有掛賬單位( 人)</string>
+    <string name="module_receipt_unit_empty_subcontent">請到「火掌櫃」-「掛賬」進行添加</string>
+    <string name="module_receipt_search_unit_empty_title">沒有符合條件的掛賬單位( 人)</string>
+    <string name="module_receipt_discount_ratio">%1$s折</string>
+    <string name="module_receipt_order_clear_alert">該訂單已付清，是否結賬完畢？</string>
+    <string name="module_receipt_order_clear_alert_sure">結賬完畢</string>
+    <string name="module_receipt_success">收款成功</string>
+    <string name="module_receipt_fail">收款失敗</string>
+    <string name="module_receipt_third_outtime">抱歉，暫時無法獲取付款結果，請返回到收款頁面，手動刷新查看付款是否成功。</string>
+    <string name="module_receipt_coupon_item">%1$s抵%2$s</string>
+    <string name="module_receipt_scan_hint">掃描顧客手機上的%1$s二維碼收款</string>
+    <string name="module_receipt_cashing">收款中</string>
+    <string name="module_receipt_permission_clear_pay">清空支付</string>
+    <string name="module_receipt_permission_online_pay_refund">電子支付退款</string>
+    <string name="module_receipt_scan_gun_hint">請使用掃描槍掃描顧客手機上的%1$s條碼或二維碼收款</string>
+
+
+    <!--會員-->
+    <string name="module_receipt_vip_card">會員卡</string>
+    <string name="module_receipt_hit_input_vip_card">輸入卡號、手機號</string>
+    <string name="module_receipt_vip_card_null">請輸入會員卡號或者手機號</string>
+    <string name="module_receipt_no_find_vip_card">找不到相應的會員卡</string>
+    <string name="module_receipt_brush_vip_card">刷會員卡</string>
+    <string name="module_receipt_brackets_discount">(%1$d折)</string>
+    <string name="module_receipt_balance_money">餘額：%1$d</string>
+    <string name="module_receipt_brackets_discount_vip">(%1$s折)</string>
+    <string name="module_receipt_discount_vip">%1$s折</string>
+    <string name="module_receipt_balance_money_vip">餘額：%1$s</string>
+    <string name="module_receipt_discount_other_name">(%s)</string>
+    <string name="module_receipt_sign_staff">本店簽字人</string>
+    <string name="module_receipt_vip_price">會員價</string>
+    <string name="module_receipt_discount_way">打折方案</string>
+    <string name="module_receipt_on_account_unit">掛賬單位（人）</string>
+
+    <string name="module_receipt_ratio">折扣</string>
+    <string name="module_receipt_balance">餘額</string>
+    <string name="module_receipt_degree">積分</string>
+    <string name="module_receipt_use_balance">使用卡內餘額支付</string>
+    <string name="module_receipt_receive_money">應收金額</string>
+    <string name="module_receipt_result_money">實收金額</string>
+    <string name="module_receipt_pass_word">密碼</string>
+    <string name="module_receipt_must_fill">必填</string>
+    <string name="module_receipt_input_pass_word">輸入密碼</string>
+    <string name="module_receipt_balance_not_enough">卡內餘額不足</string>
+    <string name="module_receipt_revenue_must_more_than_zero">實收金額必須大於0</string>
+
+    <!--收款完成-->
+    <string name="module_receipt_complete_label">收款完成</string>
+    <string name="module_receipt_complete_title">款已收清</string>
+    <string name="module_receipt_complete_back">返回主頁</string>
+    <string name="module_receipt_complete_over">結賬完畢</string>
+    <string name="module_receipt_goon">繼續收款</string>
+    <string name="module_receipt_complete_tip1">1、點擊「結賬完畢」，該訂單會被關閉，在已結賬單頁面可以找到該訂單。</string>
+    <string name="module_receipt_complete_tip2">2、點擊「返回首頁」，不關閉訂單回到找單頁面。</string>
+    <string name="module_receipt_payed_other_discount">已使用其它優惠，不能再使用本卡優惠，只能使用餘額收款</string>
+    <string name="module_receipt_pay_again">繼續收款</string>
+    <string name="module_receipt_prompt">提示</string>
+
+    <string name="module_receipt_verification_toast_please_scan">請掃描優惠券上的條碼或二維碼</string>
+    <string name="module_receipt_verification_scan_gun_hint">請使用掃描槍掃描優惠券上的條碼或二維碼</string>
+    <string name="module_receipt_verification_success">核銷成功</string>
+    <string name="module_receipt_verification_fail">核銷失敗</string>
+    <string name="module_receipt_refund_fail">退款失敗</string>
+
+    <!--零售 START-->
+    <string name="module_receipt_retail_goon">繼續開單</string>
+    <string name="module_receipt_retail_complete_back">返回</string>
+    <string name="module_receipt_retail_complete">完成</string>
+    <!--零售 END-->
+</resources>
+
