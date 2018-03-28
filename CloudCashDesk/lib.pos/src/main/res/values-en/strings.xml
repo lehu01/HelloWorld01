@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">lib.pos</string>
-    <string name="deal_exception_empty">deal exception - empty</string>
-    <string name="fail_cant_use_the_pos">The operation is failed. You should use the matching POS machine.</string>
-</resources>

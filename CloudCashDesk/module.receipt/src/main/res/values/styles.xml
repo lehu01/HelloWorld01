@@ -1,6 +1,0 @@
-<resources>
-
-    <style name="Module_Receipt_AppTheme" parent="CustomAppTheme">
-        <item name="android:windowBackground">@drawable/icon_bg_common</item>
-    </style>
-</resources>

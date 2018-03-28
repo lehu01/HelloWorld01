@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<View xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/view_vertical_divider"
-    android:layout_width="0.5dp"
-    android:layout_height="34.5dp"
-    android:layout_marginLeft="31dp"
-    android:background="#d8d8d8" />
